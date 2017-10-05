@@ -6,6 +6,7 @@ Webアプリ開発機能
 .. toctree::
    :maxdepth: 1
 
+   Thymeleaf
    Validation
    ExceptionHandling
    SessionManagement
