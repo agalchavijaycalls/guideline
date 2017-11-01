@@ -136,73 +136,51 @@ Thymeleafから提供されているProcessorのインタフェースを以下�
 
     * - processor
       - 説明
-    * - | IElementTagProcessor
-      - | 単一の開始タグまたは開始タグ内の属性に対して実行される処理を定義するためのインタフェース。
-    * - | IElementModelProcessor
-      - | 開始タグから閉じタグまでの要素全体に対して実行される処理を定義するためのインタフェース。
-    * - | ITemplateBoundariesProcessor
-      - | テンプレート処理操作の開始時または終了時に実行される処理を定義するためのインタフェース。
+    * - | \ ``org.thymeleaf.processor.element.IElementTagProcessor``\
+      - | 開始タグに対して実行される処理を定義するためのインタフェース。対象のタグの内容は参照可能だが、直接変更することはできない。structureHandlerを介してのみ対象のタグの属性やボディを変更することができる。
+    * - | \ ``org.thymeleaf.processor.elementIElementModelProcessor``\
+      - | 開始タグから閉じタグまでの要素全体に対して実行される処理を定義するためのインタフェース。対象の要素全体を参照、直接変更することができる。閉じタグの後に要素を追加することもできる。
     * - | その他
-      - | ITextProcessor, ICommentProcessorなど、それぞれのイベントに対応するインタフェースが提供されている。詳しくは\ `Tutorial: Extending Thymeleaf <http://www.thymeleaf.org/doc/tutorials/3.0/extendingthymeleaf.html#other-processors>`_\ を参照されたい。
+      - | イベントごとに対応するインタフェースが提供されている。詳しくは\ `Tutorial: Extending Thymeleaf(Processors) <http://www.thymeleaf.org/doc/tutorials/3.0/extendingthymeleaf.html#processors>`_\ を参照されたい。
 
-IElementTagProcessorを実装し、独自属性を作成する例を以下に示す。
+終了フラグに合わせて\ ``class``\ 属性を変更したうえでtodoを出力する独自属性の例を以下に示す。
 
 **実装例**
 
 .. code-block:: java
 
-    package com.example.sample.app.dialect;
-
-    import javax.servlet.http.HttpServletRequest;
-
-    import org.terasoluna.gfw.web.token.transaction.TransactionToken;
-    import org.terasoluna.gfw.web.token.transaction.TransactionTokenInterceptor;
-    import org.thymeleaf.context.ITemplateContext;
-    import org.thymeleaf.context.IWebContext;
-    import org.thymeleaf.engine.AttributeName;
-    import org.thymeleaf.model.IProcessableElementTag;
-    import org.thymeleaf.processor.element.AbstractAttributeTagProcessor;
-    import org.thymeleaf.processor.element.IElementTagStructureHandler;
-    import org.thymeleaf.templatemode.TemplateMode;
-
     // (1)
-    public class MyProcessor extends AbstractAttributeTagProcessor {
+    public class TodoTagProcessor extends
+                             AbstractStandardExpressionAttributeTagProcessor {
 
-        private static final String ATTR_NAME = "transaction";
-
-        private static final int PRECEDENCE = 1000;
-
-        public MyProcessor(final String dialectPrefix) {
+        public TodoTagProcessor(final String dialectPrefix) {
             super(TemplateMode.HTML, // (2)
                     dialectPrefix, // (3)
-                    null, // (4)
-                    false, // (5)
-                    ATTR_NAME, // (6)
-                    true, // (7)
-                    PRECEDENCE, // (8)
-                    true); // (9)
+                    "title", // (4)
+                    1000, // (5)
+                    true // (6)
+            );
         }
 
-        // (10)
         @Override
         protected void doProcess(ITemplateContext context,
                 IProcessableElementTag tag, AttributeName attributeName,
-                String attributeValue,
+                String attributeValue, Object expressionResult,
                 IElementTagStructureHandler structureHandler) {
 
-            IWebContext webContext = (IWebContext) context;
+            // (7)
+            Todo todo = (Todo) expressionResult;
 
-            HttpServletRequest request = webContext.getRequest();
+            // (8)
+            if (todo.isFinished()) {
+                structureHandler.setAttribute("class", "strike");
+            }
 
-            TransactionToken nextToken = (TransactionToken) request.getAttribute(
-                    TransactionTokenInterceptor.NEXT_TOKEN_REQUEST_ATTRIBUTE_NAME);
+            // (9)
+            structureHandler.setBody(HtmlEscape.escapeHtml5Xml(todo.getTodoTitle()),
+                false);
 
-            structureHandler.setAttribute("type", "hidden");
-            structureHandler.setAttribute("name",
-                    TransactionTokenInterceptor.TOKEN_REQUEST_PARAMETER);
-            structureHandler.setAttribute("value", nextToken.getTokenString());
         }
-
     }
 
 .. tabularcolumns:: |p{0.10\linewidth}|p{0.90\linewidth}|
@@ -214,26 +192,51 @@ IElementTagProcessorを実装し、独自属性を作成する例を以下に示
     * - 項番
       - 説明
     * - | (1)
-      - | \ ``AbstractAttributeTagProcessor``\（\ ``IElementTagProcessor``\を実装した抽象クラス）を継承する。
+      - | \ ``org.thymeleaf.standard.processor.AbstractAttributeTagProcessor``\（\ ``IElementTagProcessor``\ を実装した抽象クラス）を継承する。
     * - | (2)
       - | 適用対象となるテンプレートモードを指定する。
     * - | (3)
-      - | タグや属性の名前に適用するprefixを指定する。
+      - | タグや属性の名前に適用するプレフィックスを指定する。
     * - | (4)
-      - | 作成する独自属性の適用対象となるタグ名を指定する。nullの場合は任意のタグとなる。
-    * - | (5)
-      - | 適用対象となるタグの名前にprefixを適用させるか指定する。falseの場合はprefixを適用させない。
-    * - | (6)
       - | 適用対象となる属性を指定する。
+    * - | (5)
+      - | Dialect内におけるProcessorの優先順位を指定する。値が低いほど優先度が高くなる。
+    * - | (6)
+      - | Processor適用後に適用対象の属性の記述を削除するか指定する。基本的に適用対象の属性は出力するHTMLには不要となるので\ ``true``\ を指定する。
     * - | (7)
-      - | 適用対象となる属性の名前にprefixを適用させるか指定する。trueの場合はprefixを適用させる。
+      - | \ ``expressionResult``\ には適用対象の属性の値が式を処理した形式で格納されている。
     * - | (8)
-      - | Processorの優先順位を指定する。値が低いほど優先度が高くなる。
+      - | 終了フラグが\ ``true``\ の場合、\ ``class="strike"``\ 属性を適用対象の属性を持つタグに付与する。
     * - | (9)
-      - | Processor適用後に適用対象となった属性の記述を削除するか指定する。trueの場合は削除する。
-    * - | (10)
-      - | トランザクショントークンをhidden項目として出力するための属性を追加する。
+      - | \ ``structureHandler#setBody``\ の第一引数の文字列でボディを置き換える。第二引数のbooleanは置き換えたボディにテンプレート処理を行うかを指定する。
 
+その他の代表的な処理の使用例を以下に示す。
+
+.. code-block:: java
+
+        // (1)
+        String elementName = tag.getElementCompleteName();
+
+        // (2)
+        final IModelFactory modelFactory = context.getModelFactory();
+        final IModel model = modelFactory.createModel();
+        model.add(modelFactory.createOpenElementTag("a"));
+        model.add(modelFactory.createText("http://sample.com"));
+        model.add(modelFactory.createCloseElementTag("a"));
+        structureHandler.setBody(model, false);
+
+.. tabularcolumns:: |p{0.10\linewidth}|p{0.90\linewidth}|
+.. list-table::
+    :header-rows: 1
+    :widths: 10 90
+    :class: longtable
+
+    * - 項番
+      - 説明
+    * - | (1)
+      - | 適用対象の属性を持つタグの名前を取得する。
+    * - | (2)
+      - | \ ``model``\ を作成し、ボディを置き換える。この例ではボディは\ ``<a>http://sample.com</a>``\ に置き換えられる。
 
 ExpressionObjectの実装
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -242,26 +245,18 @@ ExpressionObjectは独自のユーティリティメソッドを定義するオ�
 
 ExpressionObjectはインタフェース等を実装する必要がなく、POJOで定義できる。
 
+日付(Joda Time)をyyyy/MM/dd形式でフォーマットして出力する例を以下に示す。
+
 **実装例**
 
 .. code-block:: java
 
-    package com.example.sample.app.dialect;
-
-    import java.util.regex.Pattern;
-
     // (1)
-    public class MyUtil {
-
-        private static final Pattern URL_PATTERN = Pattern.compile(
-                "(http|https)://[A-Za-z0-9\\._~/:\\-?&=%;]+");
+    public class MyExpressionObject {
 
         // (2)
-        public static String link(String value) {
-            if (value == null || value.isEmpty()) {
-                return "";
-            }
-            return URL_PATTERN.matcher(value).replaceAll("<a href=\"$0\">$0</a>");
+        public static String format(DateTime date) {
+            return date.toString("yyyy/MM/dd");
         }
 
     }
@@ -277,13 +272,13 @@ ExpressionObjectはインタフェース等を実装する必要がなく、POJO
     * - | (1)
       - | POJOとして作成する。
     * - | (2)
-      - | 引数に指定されたURLにジャンプするためのハイパーリンク(\ ``<a>``\ タグ)を出力するユーティリティメソッドを定義する。
+      - | 引数に指定された日付(Joda Time)をyyyy/MM/dd形式でフォーマットした文字列を返す。
 
 
 Dialectの実装
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-ProcessorやExpressionObjectで実装したロジックをテンプレート処理で実行するためにはDialectを実装してTemplateエンジンに追加する必要がある。
+ProcessorやExpressionObjectで実装したロジックをテンプレート処理で実行するためにはDialectを実装してTemplateEngineに追加する必要がある。
 
 Dialectを実装するためにThymeleafから提供されているインタフェースを以下に示す。
 
@@ -295,39 +290,22 @@ Dialectを実装するためにThymeleafから提供されているインタフ�
 
     * - インタフェース名
       - 説明
-    * - | IProcessorDialect
+    * - | \ ``org.thymeleaf.dialect.IProcessorDialect``\ 
       - | Processorを登録するDialectを実装するためのインタフェース
-    * - | IPreProcessorDialect
-      - | Pre-Processorを登録するDialectを実装するためのインタフェース
-    * - | IPostProcessorDialect
-      - | Post-Processorを登録するDialectを実装するためのインタフェース
-    * - | IExpressionObjectDialect
+    * - | \ ``org.thymeleaf.dialect.IExpressionObjectDialect``\ 
       - | Expression Objectを登録するDialectを実装するためのインタフェース
-    * - | IExecutionAttributeDialect
-      - | Execution Attributeを登録するDialectを実装するためのインタフェース
+    * - | その他
+      - | 登録内容ごとに対応するインタフェースが提供されている。詳しくは\ `Tutorial: Extending Thymeleaf(Dialects) <http://www.thymeleaf.org/doc/tutorials/3.0/extendingthymeleaf.html#dialects>`_\ を参照されたい。
 
 **実装例**
 
 .. code-block:: java
 
-    package com.example.sample.app.dialect;
-
-    import java.util.HashSet;
-    import java.util.Set;
-
-    import org.thymeleaf.context.IExpressionContext;
-    import org.thymeleaf.dialect.AbstractProcessorDialect;
-    import org.thymeleaf.dialect.IExpressionObjectDialect;
-    import org.thymeleaf.expression.IExpressionObjectFactory;
-    import org.thymeleaf.processor.IProcessor;
-    import org.thymeleaf.standard.processor.StandardXmlNsTagProcessor;
-    import org.thymeleaf.templatemode.TemplateMode;
-
     // (1)
     public class MyDiarect extends AbstractProcessorDialect implements
                            IExpressionObjectDialect {
 
-        final static String KEY = "myutil";
+        final static String KEY = "myjoda";
 
         final Set<String> names = new HashSet<String>() {
             {
@@ -337,40 +315,43 @@ Dialectを実装するためにThymeleafから提供されているインタフ�
 
         // (2)
         public MyDiarect() {
-            super("My Custom Dialect", "mydialect", 1000);
+            super("My Custom Dialect", "todo", 1000);
         }
 
-        // (3)
         public Set<IProcessor> getProcessors(final String dialectPrefix) {
             final Set<IProcessor> processors = new HashSet<IProcessor>();
             
+            // (3)
             processors.add(new MyProcessor(dialectPrefix));
+            // (4)
             processors.add(
                     new StandardXmlNsTagProcessor(TemplateMode.HTML, dialectPrefix));
             return processors;
         }
 
-        // (4)
         @Override
         public IExpressionObjectFactory getExpressionObjectFactory() {
             return new IExpressionObjectFactory() {
 
+                // (5)
                 @Override
                 public boolean isCacheable(String expressionObjectName) {
-                    return true;
+                    return false;
                 }
 
+                // (6)
                 @Override
                 public Set<String> getAllExpressionObjectNames() {
                     return names;
                 }
 
+                // (7)
                 @Override
                 public Object buildObject(IExpressionContext context,
                         String expressionObjectName) {
 
                     if (KEY.equals(expressionObjectName)) {
-                        return MyExpressionObject.class;
+                        return new MyExpressionObject();
                     }
                     return null;
                 }
@@ -389,13 +370,19 @@ Dialectを実装するためにThymeleafから提供されているインタフ�
     * - 項番
       - 説明
     * - | (1)
-      - | 作成したProcessorを登録するために\ ``AbstractProcessorDialect``\（\ ``IProcessorDialect``\ を実装した抽象クラス）を継承する。
-        | また、作成したExpressionObjectを登録するために\ ``IExpressionObjectDialect``\を実装する。
+      - | Processorを登録する場合は、\ ``org.thymeleaf.dialect.AbstractProcessorDialect``\ （\ ``IProcessorDialect``\ を実装した抽象クラス）を継承する。
+        | また、ExpressionObjectを登録する場合は、\ ``IExpressionObjectDialect``\を実装する。
     * - | (2)
-      - | 引数はDialect名、登録するProcessorのprefix、優先順位である。
+      - | 引数はDialect名、登録するProcessorのプレフィックス、優先順位である。
     * - | (3)
       - | 実装したProcessorを登録する。
     * - | (4)
+      - | HTMLの最初につける\ ``xmlns:th="http://www.thymeleaf.org"``\ のようなネームスペース表記を削除するために\ ``org.thymeleaf.standard.processor.StandardXmlNsTagProcessor``\ を登録する。
+    * - | (5)
+      - | ExpressionObjectをキャッシュするか指定する。ExpressionObjectが状態によって異なる値を返す場合は\ ``false``\ を指定する。
+    * - | (6)
+      - | ExpressionObjectの名前を登録する。
+    * - | (7)
       - | 実装したExpressionObjectを登録する。
 
 カスタムダイアレクトの使用方法
@@ -428,14 +415,14 @@ Dialectを実装するためにThymeleafから提供されているインタフ�
     * - 項番
       - 説明
     * - | (1)
-      - | \ ``TemplateEngine``\ に作成したカスタムダイアレクトを追加する。
+      - | TemplateEngine に作成したカスタムダイアレクトを追加する。
 
 **view.html**
 
 .. code-block:: html
 
     <!DOCTYPE html>
-    <html xmlns:th="http://www.thymeleaf.org">
+    <html xmlns:th="http://www.thymeleaf.org" xmlns:todo="http://todosample">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>View</title>
@@ -445,11 +432,14 @@ Dialectを実装するためにThymeleafから提供されているインタフ�
 
         <!-- omitted -->
 
-        <input mydialect:transaction> <!-- (1) -->
+        <!-- (1) -->
+        <span todo:title="${todo}">
+            todo title
+        </span>
 
         <!-- omitted -->
 
-        <div th:utext="${#myutil.link('http://www.dummy.com/')}">dummy url</div> <!-- (2) -->
+        <div th:text="${#myjoda.format(date)}">yyyy/MM/dd</div> <!-- (2) -->
 
         <!-- omitted -->
 
@@ -473,15 +463,28 @@ Dialectを実装するためにThymeleafから提供されているインタフ�
 
 .. code-block:: html
 
-    <!-- omitted -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>View</title>
+    <link rel="stylesheet"
+        href="/todo/resources/app/css/styles.css" type="text/css">
+    </head>
+    <body>
 
-    <input type="hidden" name="_TRANSACTION_TOKEN" value="todoTransactionTokenCheck~e599c943eccf81d689ac29c53300921a~450d85ddd30755842790c0e00a3ee00b">
+        <!-- omitted -->
 
-    <!-- omitted -->
+        <span class="strike">sample TODO</span>
 
-    <div><a href="http://www.dummy.com/">http://www.dummy.com/</a></div>
+        <!-- omitted -->
 
-    <!-- omitted -->
+        <div>2017/10/30</div>
+
+        <!-- omitted -->
+
+    </body>
+    </html>
 
 
 Appendix
