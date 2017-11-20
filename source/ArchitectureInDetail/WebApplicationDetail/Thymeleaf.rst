@@ -187,9 +187,9 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
     * - | \ ``org.thymeleaf.model.IProcessableElementTag``\
       - | 属性を適用したタグ自体の情報を保持するインタフェース。タグの名前や付与された属性を取得することができる。
     * - | \ ``org.thymeleaf.processor.element.IElementTagStructureHandler``\
-      - | Processorで行う処理を指定するインタフェース。
+      - | 属性を適用したタグや、そのボディ部を編集するためのインタフェース。
 
-ラベル、入力フォーム、エラーメッセージをまとめて出力する独自属性の実装例を以下に示す。
+ラベル、入力フィールド、エラーメッセージをまとめて出力する独自属性の実装例を以下に示す。
 
 .. note:: 
   独自タグと独自属性どちらでも同じ機能を実装できる場合があるが、独自属性での実装を推奨する。
@@ -210,7 +210,7 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
 
     <form th:object="${userForm}">
         <div class="form-input">
-            <label>userName</label>
+            <label for="userName">userName</label>
             <input th:field="*{userName}" />
             <span th:errors="*{userName}"></span>
         </div>
@@ -227,9 +227,9 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
 .. code-block:: java
 
     // (1)
-    public class InputFormProcessor extends AbstractAttributeTagProcessor {
+    public class FormInputAttributeTagProcessor extends AbstractAttributeTagProcessor {
 
-        public InputFormProcessor(final String dialectPrefix) {
+        public FormInputAttributeTagProcessor(final String dialectPrefix) {
             super(TemplateMode.HTML, // (2)
                     dialectPrefix, // (3)
                     null, false, // (4)
@@ -252,7 +252,6 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
             if (StringUtils.isEmpty(classValue)) {
                 structureHandler.setAttribute("class", "form-input");
             } else {
-                structureHandler.removeAttribute("class");
                 structureHandler.setAttribute("class", classValue + " form-input");
             }
 
@@ -261,8 +260,8 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
             IModel model = modelFactory.createModel();
 
             // (12)
-            model.add(modelFactory.createOpenElementTag("label"));
-            model.add(modelFactory.createText(getLabel(attributeValue)));
+            model.add(modelFactory.createOpenElementTag("label", "for", "userName"));
+            model.add(modelFactory.createText(createLabel(attributeValue)));
             model.add(modelFactory.createCloseElementTag("label"));
 
             model.add(modelFactory.createStandaloneElementTag("input", "th:field",
@@ -277,7 +276,7 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
 
         }
     
-        private String getLabel(String attributeValue){
+        private String createLabel(String attributeValue){
 
             // omitted
 
@@ -316,7 +315,7 @@ Processorでの処理に用いる代表的なインタフェースを以下に�
     * - | (11)
       - | \ ``IModelFactory``\ を取得し、\ ``IModel``\ を生成する。
     * - | (12)
-      - | \ ``IModel``\ にラベル、入力フォーム、エラー文を出力させるための要素を追加する。
+      - | \ ``IModel``\ にラベル、入力フィールド、エラーメッセージを出力させるための要素を追加する。
     * - | (13)
       - | 渡した\ ``IModel``\適用対象の属性を持つタグのボディを置き換える。booleanは置き換えたボディをテンプレートエンジンで再評価するかを指定する。
         | 上記の例では\ ``th:field``\ 属性と\ ``th:errors``\ 属性を再評価する必要があるため\ ``true``\ を指定している。
@@ -343,7 +342,7 @@ ExpressionObjectはインタフェース等を実装する必要がなく、POJO
 .. code-block:: java
 
     // (1)
-    public class DateFormatSlash {
+    public class CustomDateFormat {
 
         // (2)
         public String formatYYYYMMDD(Date date) {
@@ -412,7 +411,7 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
             final Set<IProcessor> processors = new HashSet<IProcessor>();
 
             // (3)
-            processors.add(new InputFormProcessor(dialectPrefix));
+            processors.add(new FormInputAttributeTagProcessor(dialectPrefix));
 
             // (4)
             processors.add(
@@ -447,11 +446,11 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
 .. code-block:: java
 
     // (1)
-    public class DateFormatSlashDialect implements IExpressionObjectDialect {
+    public class CustomFormatDialect implements IExpressionObjectDialect {
     
         private Set<String> names = new HashSet<String>() {
             {
-                add("dateformatslash");
+                add("customdateformat");
             }
         };
 
@@ -469,8 +468,8 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
                 @Override
                 public Object buildObject(IExpressionContext context,
                         String expressionObjectName) {
-                    if ("dateformatslash".equals(expressionObjectName)) {
-                        return new DateFormatSlash();
+                    if ("customdateformat".equals(expressionObjectName)) {
+                        return new CustomDateFormat();
                     }
                     return null;
                 }
@@ -508,6 +507,11 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
     * - | (4)
       - | ExpressionObjectをキャッシュするか指定する。ExpressionObjectが状態によって異なる値を返す場合は\ ``false``\ 、状態にかかわらず返す値が一定である場合は\ ``true``\ を指定する。
 
+.. note:: 
+
+  上記の例ではProcessorとExpressionObjectを別のDialectで登録する例を示しているが、意味的にまとめられる機能であれば一つのDialectで登録することも可能である。
+
+
 .. _custom_dialect_how_to_use:
 
 カスタムダイアレクトの使用方法
@@ -528,7 +532,7 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
             <set>
                 <bean class="org.thymeleaf.extras.springsecurity4.dialect.SpringSecurityDialect" />
                 <bean class="com.example.sample.dialect.InputFormDialect" />
-                <bean class="com.example.sample.dialect.DateFormatSlashDialect" />
+                <bean class="com.example.sample.dialect.CustomFormatDialect" />
             </set>
         </property>
     </bean>
@@ -549,7 +553,7 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
 .. code-block:: html
 
     <!DOCTYPE html>
-    <html xmlns:th="http://www.thymeleaf.org" xmlns:input="http://inputformsample"> <!-- (1) -->
+    <html xmlns:th="http://www.thymeleaf.org" xmlns:input="http://inputform.sample.example.com"> <!-- (1) -->
     <head>
 
         <!-- omitted -->
@@ -566,7 +570,7 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
 
         <!-- omitted -->
 
-        <div th:text="${#dateformatslash.formatYYYYMMDD(date)}">yyyy/MM/dd</div> <!-- (3) -->
+        <span th:text="${#customdateformat.formatYYYYMMDD(date)}">yyyy/MM/dd</span> <!-- (3) -->
 
         <!-- omitted -->
 
@@ -586,7 +590,7 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
     * - | (2)
       - | 作成した\ ``input:form-input``\ 属性を指定する。
     * - | (3)
-      - | 作成した式オブジェクト\ ``dateformatslash``\ を呼び出す。
+      - | 作成した式オブジェクト\ ``customdateformat``\ を呼び出す。
 
 **出力結果**
 
@@ -604,18 +608,33 @@ ProcessorとExpressionObjectを登録するDialectの実装例を以下に示す
         <!-- omitted -->
 
         <form>
-            <div class="form-input"><label>userName</label><input id="userName" name="userName" value=""/></div>
+            <!-- (1) -->
+            <div class="form-input">
+                <label for="userName">userName</label>
+                <input id="userName" name="userName" value=""/>
+            </div>
         </form>
 
 
         <!-- omitted -->
 
-        <div>2017/10/30</div>
+        <span>2017/10/30</span>
 
         <!-- omitted -->
 
     </body>
     </html>
+
+.. tabularcolumns:: |p{0.10\linewidth}|p{0.90\linewidth}|
+.. list-table::
+    :header-rows: 1
+    :widths: 10 90
+    :class: longtable
+
+    * - 項番
+      - 説明
+    * - | (1)
+      - | 見やすくするために改行とインデントを入れてあるが、実際には開始タグから閉じタグまで1行で出力される。
 
 
 Appendix
