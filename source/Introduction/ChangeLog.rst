@@ -30,7 +30,7 @@
       - :doc:`../ImplementationAtEachLayer/DomainLayer`
       - 記載内容の追加
 
-        * \ ``@Transactional`` \アノテーションの\ ``timeout`` \属性に関する記載を追加(\ `guideline#1776 <https://github.com/terasolunaorg/guideline/issues/1776>`_\ ) 
+        * \ ``@Transactional`` \アノテーションの\ ``timeout`` \属性に関する記載を追加(\ `guideline#1776 <https://github.com/terasolunaorg/guideline/issues/1776>`_\ )
 
     * -
       - :doc:`../ArchitectureInDetail/WebApplicationDetail/Validation`
@@ -61,7 +61,7 @@
       - Spring Framework 4.3対応に伴う修正
 
         * Basic認証用のリクエストヘッダの設定に関する記載を変更(\ `guideline#2742 <https://github.com/terasolunaorg/guideline/issues/2742>`_\ )
-        
+
     * -
       - :doc:`../ArchitectureInDetail/WebServiceDetail/SOAP`
       - 記載内容の修正
@@ -81,7 +81,13 @@
 
         * ブランクプロジェクトから\ ``mvc:path-matching`` \の定義を削除しSpring MVCのデフォルト設定を使用するよう変更したことに伴う記載内容の修正(\ `guideline#2941 <https://github.com/terasolunaorg/guideline/issues/2941>`_\ )
 
-    * - 
+      * -
+        - :doc:`../Security/LinkageWithBrowser`
+        - 記載内容の追加
+
+          * アプリケーションサーバによってはキャッシュコントロールされているレスポンスヘッダが正しく設定されないことがある問題についての注意事項を追加(\ `guideline#2913 <https://github.com/terasolunaorg/guideline/issues/2913>`_\ )
+
+    * -
       - :doc:`../Security/XSS`
       - 記載内容の修正、追加
 
@@ -159,7 +165,7 @@
 
         * 利用規約の修正(\ `guideline#2625 <https://github.com/terasolunaorg/guideline/issues/2625>`_\ )
 
-    * - 
+    * -
       - :doc:`../Overview/FrameworkStack`
       - 利用するOSSのバージョンを更新(\ `guideline#2441 <https://github.com/terasolunaorg/guideline/issues/2441>`_\ )
 
@@ -170,7 +176,7 @@
 
         Spring IO Platformのバージョン更新に伴い利用するOSSのバージョンを更新
 
-    * - 
+    * -
       - :doc:`../ImplementationAtEachLayer/DomainLayer`
       - 記載内容の改善
 
@@ -211,13 +217,13 @@
 
         * セッションスコープに格納しているオブジェクトを受け取る際にリクエストパラメータのバインドを防止する方法について追記(\ `guideline#1293 <https://github.com/terasolunaorg/guideline/issues/1293>`_\ )
 
-    * - 
+    * -
       - :doc:`../ArchitectureInDetail/WebApplicationDetail/Internationalization`
       - 記載内容の追加
 
         * 国際化が適用されない場合の例とその対策方法を追加(\ `guideline#2427 <https://github.com/terasolunaorg/guideline/issues/2427>`_\ )
 
-    * - 
+    * -
       - :doc:`../ArchitectureInDetail/WebApplicationDetail/FileUpload`
       - 記載内容の追加
 
@@ -266,7 +272,7 @@
 
         * PostgreSQL使用時に"nowait"句が付加されない不具合に対する注意事項を追加(\ `guideline#2372 <https://github.com/terasolunaorg/guideline/issues/2372>`_\ )
 
-    * - 
+    * -
       - :doc:`../ArchitectureInDetail/MessagingDetail/Email`
       - 記載内容の追加
 
@@ -298,7 +304,7 @@
 
         * \ ``AntPathRequestMatcher``\のパスマッチングの仕様変更に対する注意点を追記(\ `guideline#2428 <https://github.com/terasolunaorg/guideline/issues/2428>`_\ )
 
-    * - 
+    * -
       - :doc:`../Security/LinkageWithBrowser`
       - Spring Security 4.1.4対応に伴う修正
 
@@ -397,21 +403,21 @@
     * -
       - :doc:`../ArchitectureInDetail/WebApplicationDetail/ExceptionHandling`
       - Spring Framework 4.2.7対応に伴う修正
-      
+
         * HTTPレスポンスヘッダー出力に関する説明内容を修正(\ `guideline#1965 <https://github.com/terasolunaorg/guideline/issues/1965>`_\ )
 
     * -
       - :doc:`../ArchitectureInDetail/WebApplicationDetail/DoubleSubmitProtection`
       - 記載内容の追加
-      
-        * \ ``@TransactionTokenCheck``\アノテーションのtype属性に新たに追加された \ ``TransactionTokenType.CHECK``\の仕様、利用方法に関する記載の追加 
+
+        * \ ``@TransactionTokenCheck``\アノテーションのtype属性に新たに追加された \ ``TransactionTokenType.CHECK``\の仕様、利用方法に関する記載の追加
           (\ `guideline#2071 <https://github.com/terasolunaorg/guideline/issues/2071>`_\ )
 
         「How To Extend プログラマティックにトランザクショントークンのライフサイクルを管理する方法について」を削除。
 
         * \ ``TransactionTokenContext``\が提供していたアプリケーション向けAPIを使用した場合、
           \ ``TransactionToken``\を正しい状態に維持できなくなるなど、フレームワーク内部の挙動に影響を及ぼすような作り込みができてしまうことから、
-          当該APIの非推奨化がなされた。非推奨化にあわせて該当機能の利用方法の記述を削除した。 
+          当該APIの非推奨化がなされた。非推奨化にあわせて該当機能の利用方法の記述を削除した。
 
     * -
       - :doc:`../ArchitectureInDetail/WebApplicationDetail/Internationalization`
@@ -471,7 +477,7 @@
     * -
       - :doc:`../ArchitectureInDetail/GeneralFuncDetail/Logging`
       - 記載内容の追加
-        
+
         * ID付きログメッセージを出力するための拡張方法を記載 (\ `guideline#1928 <https://github.com/terasolunaorg/guideline/issues/1928>`_\ )
 
     * -
@@ -556,7 +562,7 @@
 
         共通ライブラリの新機能追加
 
-        \ ``terasoluna-gfw-string``\ 
+        \ ``terasoluna-gfw-string``\
          * 半角全角変換
 
         \ ``terasoluna-gfw-codepoints``\
