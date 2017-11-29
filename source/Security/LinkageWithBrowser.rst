@@ -218,13 +218,13 @@ How to use
 
 前述のセキュリティヘッダ出力機能を適用する方法を説明する。
 
-セキュリティヘッダ出力機能は、Spring 3.2から追加された機能で以下のセキュリティヘッダ以外はデフォルトで適用されるようになっている。 
+セキュリティヘッダ出力機能は、Spring 3.2から追加された機能で以下のセキュリティヘッダ以外はデフォルトで適用されるようになっている。
 
 * Content-Security-Policy
 * Public-Key-Pins
 
-そのため、デフォルトで適用されるセキュリティヘッダ出力機能を有効にするための特別な定義は不要である。 
-なお、デフォルトで適用されるセキュリティヘッダ出力機能を適用したくない場合は、明示的に無効化する必要がある。 
+そのため、デフォルトで適用されるセキュリティヘッダ出力機能を有効にするための特別な定義は不要である。
+なお、デフォルトで適用されるセキュリティヘッダ出力機能を適用したくない場合は、明示的に無効化する必要がある。
 
 セキュリティヘッダ出力機能を無効化する場合は、以下のようなbean定義を行う。
 
@@ -299,17 +299,17 @@ How to use
     また、Spring Securityのデフォルト実装では、Public-Key-Pinsヘッダは、アプリケーションサーバに対してHTTPSを使ってアクセスがあった場合のみ出力される。
 
 
-また、不要なものだけ無効化する方法も存在する。 
+また、不要なものだけ無効化する方法も存在する。
 
 * spring-security.xmlの定義例
-    
-.. code-block:: xml 
+
+.. code-block:: xml
 
     <sec:headers>
-        <sec:cache-control disabled="true"/> <!-- disabled属性にtrueを設定して無効化 --> 
+        <sec:cache-control disabled="true"/> <!-- disabled属性にtrueを設定して無効化 -->
     </sec:headers>
 
-上記の例だと、Cache-Control関連のヘッダだけが出力されなくなる。 
+上記の例だと、Cache-Control関連のヘッダだけが出力されなくなる。
 
 セキュリティヘッダの詳細については\ `公式リファレンス <http://docs.spring.io/spring-security/site/docs/4.1.4.RELEASE/reference/htmlsingle/#default-security-headers>`_\ を参照されたい。
 
@@ -410,18 +410,18 @@ Spring Securityは、\ ``RequestMatcher``\ インタフェースの仕組みを�
     * - | (2)
       - | \ ``<sec:headers>``\ 要素の子要素として\ ``<sec:header>`` を追加し、\ ``ref``\ 属性に(1)で定義した\ ``HeaderWriter``\ のbeanを指定する。
 
-.. warning:: **アプリケーションサーバによってはキャッシュコントロールされているレスポンスヘッダが正しく設定されない問題**
+.. warning:: **アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題**
 
-    Spring Security 4.1.0により、キャッシュ制御ヘッダの付与に関する仕様が変更された。
-    その仕様変更が起因になり「アプリケーションサーバによってはキャッシュコントロールされているレスポンスヘッダが正しく設定されない問題」が発生することが判明している。
+    Spring Security 4.1.0により、キャッシュ制御ヘッダの付与に関する仕様が変更された(\ `spring-projects/spring-security#2953 <https://github.com/spring-projects/spring-security/issues/2953>`_ \)。
+    その仕様変更が起因になり「アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題」が発生することが判明している。
 
     この仕様変更は、Spring Security 4.2.0では取り下げられた修正がされているため、Spring Security 4.2.x以降は発生しない。
 
-    Spring Security 4.1.0を使用している場合、フィルタを利用することで回避が可能である。
+    Spring Security 4.1.xを使用しているTERASOLUNAフレームワーク5.3.xではこの問題に当たる可能性があるが、問題の起因となるHeaderWriterFilterをSpring Security 4.2.xのものに差し替えることで回避が可能である。
 
-    1. Spring Securityの \ `HeaderWriterFilter  <https://github.com/spring-projects/spring-security/blob/df3b8bc2847252689347bc6ed9ffefb4e832dbb4/web/src/main/java/org/springframework/security/web/header/HeaderWriterFilter.java>`_ \ をコピーして適当な場所に配置する。
+    1. Spring Securityの \ `HeaderWriterFilter  <https://github.com/spring-projects/spring-security/blob/4.2.0.RELEASE/web/src/main/java/org/springframework/security/web/header/HeaderWriterFilter.java>`_ \ をコピーして適当な場所に配置する。
 
-    この例では、\ ``org.terasoluna.examples.security.filter.HeaderWriterFilterEx``\ とする。
+    この例では、\ ``com.example.security.filter.HeaderWriterFilterEx``\ とする。
 
     2. spring-security.xmlの定義を変更する。
 
@@ -444,15 +444,13 @@ Spring Securityは、\ ``RequestMatcher``\ インタフェースの仕組みを�
 
         <sec:http>
             <!-- omitted -->
-            <sec:headers>
-              <sec:header disabled="true" /> <!-- (2) -->
-              <sec:custom-filter position="HEADERS_FILTER" ref="customizedHeaderWriterFilter"/> <!-- (3) -->
-            </sec:headers>
+            <sec:headers disabled="true" /> <!-- (2) -->
+            <sec:custom-filter position="HEADERS_FILTER" ref="customizedHeaderWriterFilter"/> <!-- (3) -->
             <!-- omitted -->
         </sec:http>
 
         <!-- (4) -->
-        <bean id="customizedHeaderWriterFilter" class= "org.terasoluna.examples.security.filter.HeaderWriterFilterEx" >
+        <bean id="customizedHeaderWriterFilter" class= "com.example.security.filter.HeaderWriterFilterEx" >
             <constructor-arg ref="secureCacheControlHeadersWriter" />
         </bean>
 
@@ -476,4 +474,3 @@ Spring Securityは、\ ``RequestMatcher``\ インタフェースの仕組みを�
 .. raw:: latex
 
    \newpage
-
