@@ -313,6 +313,70 @@ How to use
 
 セキュリティヘッダの詳細については\ `公式リファレンス <http://docs.spring.io/spring-security/site/docs/4.1.4.RELEASE/reference/htmlsingle/#default-security-headers>`_\ を参照されたい。
 
+.. warning:: **アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題**
+
+    Spring Security 4.1.0により、キャッシュ制御ヘッダの付与に関する仕様が変更された(\ `spring-projects/spring-security#2953 <https://github.com/spring-projects/spring-security/issues/2953>`_ \)。
+    その仕様変更が起因になり「アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題」が発生することが判明している。
+
+    この仕様変更は、Spring Security 4.2.0では取り下げられた修正がされているため、Spring Security 4.2.x以降は発生しない。
+
+    Spring Security 4.1.xを使用しているTERASOLUNAフレームワーク5.3.xではこの問題に当たる可能性があるが、問題の起因となるHeaderWriterFilterをSpring Security 4.2.xのものに差し替えることで回避が可能である。
+
+    1. Spring Securityの \ `HeaderWriterFilter  <https://github.com/spring-projects/spring-security/blob/4.2.0.RELEASE/web/src/main/java/org/springframework/security/web/header/HeaderWriterFilter.java>`_ \ をコピーして適当な場所に配置する。
+
+    この例では、\ ``com.example.security.filter.HeaderWriterFilterEx``\ とする。
+
+    2. spring-security.xmlの定義を変更する。
+
+    * spring-security.xmlの定義例
+
+    .. code-block:: xml
+
+        <!-- (1) -->
+        <bean id="secureCacheControlHeadersWriter"
+              class="org.springframework.security.web.header.writers.DelegatingRequestMatcherHeaderWriter">
+            <constructor-arg>
+                <bean class="org.springframework.security.web.util.matcher.AntPathRequestMatcher">
+                    <constructor-arg value="/secure/**"/> <!-- (2) -->
+                </bean>
+            </constructor-arg>
+            <constructor-arg>
+                <bean class="org.springframework.security.web.header.writers.CacheControlHeadersWriter"/>
+            </constructor-arg>
+        </bean>
+
+        <sec:http pattern="/secure/**"/> <!-- (2) -->
+            <!-- omitted -->
+            <sec:headers disabled="true" /> <!-- (3) -->
+            <sec:custom-filter position="HEADERS_FILTER" ref="customizedHeaderWriterFilter"/> <!-- (4) -->
+            <!-- omitted -->
+        </sec:http>
+
+        <!-- (5) -->
+        <bean id="customizedHeaderWriterFilter" class= "com.example.security.filter.HeaderWriterFilterEx" >
+            <constructor-arg ref="secureCacheControlHeadersWriter" />
+        </bean>
+
+    .. tabularcolumns:: |p{0.10\linewidth}|p{0.90\linewidth}|
+    .. list-table::
+        :header-rows: 1
+        :widths: 10 90
+
+        * - 項番
+          - 説明
+        * - | (1)
+          - | \ ``RequestMatcher``\ と\ ``HeadersWriter``\ インタフェースの実装クラスを指定して\ ``DelegatingRequestMatcherHeaderWriter``\ クラスのbeanを定義する。
+        * - | (2)
+          - | \ ``AntPathRequestMatcher``\ で設定したパスと\ ``<sec:http>`` の\ ``pattern``\ 属性で設定したパスと一致させる。
+        * - | (3)
+          - | \ ``<sec:headers>``\ 要素の子要素として\ ``<sec:header>`` を追加し、\ ``disabled``\ 属性を\ ``true``\ に設定する。
+        * - | (4)
+          - | \ ``<sec:headers>``\ 要素の子要素として\ ``<sec:custom-filter>``\ を追加し、\ ``position``\ 属性に\ ``HEADERS_FILTER``\ を指定し、
+            | \ ``ref``\ 属性に\ (5)で定義した\ ``HeaderWriterFilterEx``\ のbeanを指定する。
+        * - | (5)
+          - | (1)で定義した\ ``HeaderWriter``\ のbean指定して\ ``HeaderWriterFilterEx``\ クラスのbeanを定義する。
+
+
 
 セキュリティヘッダのオプション指定
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -409,67 +473,6 @@ Spring Securityは、\ ``RequestMatcher``\ インタフェースの仕組みを�
       - | \ ``RequestMatcher``\ と\ ``HeadersWriter``\ インタフェースの実装クラスを指定して\ ``DelegatingRequestMatcherHeaderWriter``\ クラスのbeanを定義する。
     * - | (2)
       - | \ ``<sec:headers>``\ 要素の子要素として\ ``<sec:header>`` を追加し、\ ``ref``\ 属性に(1)で定義した\ ``HeaderWriter``\ のbeanを指定する。
-
-.. warning:: **アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題**
-
-    Spring Security 4.1.0により、キャッシュ制御ヘッダの付与に関する仕様が変更された(\ `spring-projects/spring-security#2953 <https://github.com/spring-projects/spring-security/issues/2953>`_ \)。
-    その仕様変更が起因になり「アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題」が発生することが判明している。
-
-    この仕様変更は、Spring Security 4.2.0では取り下げられた修正がされているため、Spring Security 4.2.x以降は発生しない。
-
-    Spring Security 4.1.xを使用しているTERASOLUNAフレームワーク5.3.xではこの問題に当たる可能性があるが、問題の起因となるHeaderWriterFilterをSpring Security 4.2.xのものに差し替えることで回避が可能である。
-
-    1. Spring Securityの \ `HeaderWriterFilter  <https://github.com/spring-projects/spring-security/blob/4.2.0.RELEASE/web/src/main/java/org/springframework/security/web/header/HeaderWriterFilter.java>`_ \ をコピーして適当な場所に配置する。
-
-    この例では、\ ``com.example.security.filter.HeaderWriterFilterEx``\ とする。
-
-    2. spring-security.xmlの定義を変更する。
-
-    * spring-security.xmlの定義例
-
-    .. code-block:: xml
-
-        <!-- (1) -->
-        <bean id="secureCacheControlHeadersWriter"
-              class="org.springframework.security.web.header.writers.DelegatingRequestMatcherHeaderWriter">
-            <constructor-arg>
-                <bean class="org.springframework.security.web.util.matcher.AntPathRequestMatcher">
-                    <constructor-arg value="/secure/**"/>
-                </bean>
-            </constructor-arg>
-            <constructor-arg>
-                <bean class="org.springframework.security.web.header.writers.CacheControlHeadersWriter"/>
-            </constructor-arg>
-        </bean>
-
-        <sec:http>
-            <!-- omitted -->
-            <sec:headers disabled="true" /> <!-- (2) -->
-            <sec:custom-filter position="HEADERS_FILTER" ref="customizedHeaderWriterFilter"/> <!-- (3) -->
-            <!-- omitted -->
-        </sec:http>
-
-        <!-- (4) -->
-        <bean id="customizedHeaderWriterFilter" class= "com.example.security.filter.HeaderWriterFilterEx" >
-            <constructor-arg ref="secureCacheControlHeadersWriter" />
-        </bean>
-
-    .. tabularcolumns:: |p{0.10\linewidth}|p{0.90\linewidth}|
-    .. list-table::
-        :header-rows: 1
-        :widths: 10 90
-
-        * - 項番
-          - 説明
-        * - | (1)
-          - | \ ``RequestMatcher``\ と\ ``HeadersWriter``\ インタフェースの実装クラスを指定して\ ``DelegatingRequestMatcherHeaderWriter``\ クラスのbeanを定義する。
-        * - | (2)
-          - | \ ``<sec:headers>``\ 要素の子要素として\ ``<sec:header>`` を追加し、\ ``disabled``\ 属性を\ ``true``\ に設定する。
-        * - | (3)
-          - | \ ``<sec:headers>``\ 要素の子要素として\ ``<sec:custom-filter>``\ を追加し、\ ``position``\ 属性に\ ``HEADERS_FILTER``\ を指定し、
-            | \ ``ref``\ 属性に\ (4)で定義した\ ``HeaderWriterFilterEx``\ のbeanを指定する。
-        * - | (4)
-          - | (1)で定義した\ ``HeaderWriter``\ のbean指定して\ ``HeaderWriterFilterEx``\ クラスのbeanを定義する。
 
 .. raw:: latex
 
