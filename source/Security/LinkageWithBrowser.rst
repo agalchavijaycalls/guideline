@@ -322,7 +322,7 @@ How to use
 
     Spring Security 4.1.xを使用しているTERASOLUNAフレームワーク5.3.xではこの問題に当たる可能性があるが、問題の起因となるHeaderWriterFilterをSpring Security 4.2.xのものに差し替えることで回避が可能である。
 
-    1. Spring Securityの \ `HeaderWriterFilter  <https://github.com/spring-projects/spring-security/blob/4.2.0.RELEASE/web/src/main/java/org/springframework/security/web/header/HeaderWriterFilter.java>`_ \ をコピーして適当な場所に配置する。
+    1. Spring Securityの \ `HeaderWriterFilter  <https://github.com/spring-projects/spring-security/blob/4.2.0.RELEASE/web/src/main/java/org/springframework/security/web/header/HeaderWriterFilter.java>`_ \ をコピーして適当な場所に配置する。ただし、\ ``defaults-disabled="true"``\ と同じ動作をさせるにはフィルタ内で実装する必要がある。 
 
     この例では、\ ``com.example.security.filter.HeaderWriterFilterEx``\ とする。
 
