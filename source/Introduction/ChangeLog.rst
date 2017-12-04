@@ -85,7 +85,7 @@
       - :doc:`../Security/LinkageWithBrowser`
       - 記載内容の追加
 
-        * アプリケーションサーバによってはキャッシュコントロールされているレスポンスヘッダが正しく設定されないことがある問題についての注意事項を追加(\ `guideline#2913 <https://github.com/terasolunaorg/guideline/issues/2913>`_\ )
+        * アプリケーションサーバによってはCache-Controlヘッダが正しく設定されない問題についての注意事項を追加(\ `guideline#2913 <https://github.com/terasolunaorg/guideline/issues/2913>`_\ )
 
     * -
       - :doc:`../Security/XSS`
