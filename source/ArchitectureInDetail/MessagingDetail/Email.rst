@@ -194,6 +194,8 @@ JavaMailSenderの設定方法
  .. list-table:: **アプリケーションサーバから提供されているメールセッション**
     :header-rows: 1
     :widths: 10 35 55
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - アプリケーションサーバ
@@ -248,6 +250,8 @@ JNDI経由で取得したメールセッションをBeanとして登録するた
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -318,6 +322,8 @@ JNDI経由で取得したメールセッションをBeanとして登録するた
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -404,6 +410,8 @@ SimpleMailMessageによるメール送信方法
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -516,6 +524,8 @@ MimeMessageによるメール送信方法
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -660,6 +670,8 @@ HTMLメールの送信
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -773,6 +785,8 @@ HTMLメールの送信
  .. list-table:: **メール送信時の例外**
     :header-rows: 1
     :widths: 10 35 55
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 例外クラス
@@ -906,6 +920,9 @@ FreeMarkerを使用したメール本文の作成
     .. list-table::
        :header-rows: 1
        :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
     
        * - 項番
          - 説明
@@ -990,6 +1007,8 @@ MS932で入力された文字列に対し、エンコードにISO-2022-JPをは�
 .. list-table::
    :header-rows: 2
    :widths: 20 15 15 15 15 20
+        :class: longtable
+    :class: longtable
 
    * - 変換前
      - 
@@ -1277,6 +1296,8 @@ GreenMailを利用したテストコードの実装例を以下に示す。
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明

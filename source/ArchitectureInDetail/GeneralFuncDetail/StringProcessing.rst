@@ -226,6 +226,8 @@ How to use
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -364,6 +366,8 @@ How to use
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -449,6 +453,8 @@ How to use
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -526,6 +532,9 @@ How to use
  .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -583,6 +592,8 @@ How to use
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -629,6 +640,8 @@ How to use
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -730,6 +743,8 @@ Bean Validationと連携した文字列チェック
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

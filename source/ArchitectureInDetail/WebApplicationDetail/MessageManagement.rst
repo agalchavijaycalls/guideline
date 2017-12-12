@@ -36,6 +36,8 @@ Overview
 .. list-table::
    :header-rows: 1
    :widths: 20 20 60
+        :class: longtable
+    :class: longtable
 
    * - メッセージタイプ
      - カテゴリ
@@ -235,6 +237,9 @@ Overview
     .. list-table::
        :header-rows: 1
        :widths: 14 14 16 14 14 14 14
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
        * - 接頭句
          - 区切り
@@ -357,6 +362,9 @@ Overview
     .. list-table::
        :header-rows: 1
        :widths: 20 20 40 10
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
        * - 項目
          - 位置
@@ -530,6 +538,9 @@ How to use
     .. list-table::
        :header-rows: 1
        :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
        * - 項番
          - 説明
@@ -739,6 +750,9 @@ Controllerで\ ``ResultMessages``\ を生成して画面に渡し、JSPで\ ``<t
     .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -883,6 +897,9 @@ infoメッセージを表示したい場合は、次のように\ ``ResultMessag
 .. list-table::
   :header-rows: 1
   :widths: 15 30 25 30
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
   * - メッセージタイプ
     - \ ``ResultMessages``\ オブジェクトの作成
@@ -1110,6 +1127,9 @@ infoメッセージを表示したい場合は、次のように\ ``ResultMessag
     .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -1214,6 +1234,9 @@ How to extend
 .. list-table::
   :header-rows: 1
   :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
   * - 項番
     - 説明
@@ -1484,6 +1507,9 @@ ResultMessagesを使用しない結果メッセージの表示
 .. list-table::
   :header-rows: 1
   :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
   * - 項番
     - 説明

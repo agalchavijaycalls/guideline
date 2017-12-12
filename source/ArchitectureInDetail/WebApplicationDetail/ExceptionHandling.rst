@@ -34,6 +34,8 @@ Overview
 .. list-table:: **表-アプリケーション実行時に発生する例外の分類**
    :header-rows: 1
    :widths: 10 30 30 30
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 分類
@@ -203,6 +205,8 @@ Detail
 .. list-table:: **表-例外の種類**
    :header-rows: 1
    :widths: 10 20 30
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 例外の種類
@@ -849,6 +853,8 @@ How to use
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1057,6 +1063,8 @@ ResultMessagesを保持する例外(BisinessException,ResourceNotFoundException)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1115,6 +1123,8 @@ ResultMessagesを保持する例外(BisinessException,ResourceNotFoundException)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1219,6 +1229,9 @@ Spring MVCの、デフォルトの例外ハンドリング機能によって行�
     .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -1358,6 +1371,8 @@ Spring MVCの、デフォルトの例外ハンドリング機能によって行�
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1444,6 +1459,8 @@ Spring MVCの、デフォルトの例外ハンドリング機能によって行�
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1596,6 +1613,8 @@ Spring MVCの、デフォルトの例外ハンドリング機能によって行�
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1714,6 +1733,8 @@ MessagesPanelTagを使用して、メッセージを画面表示する方法
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1894,6 +1915,8 @@ Appendix
 .. list-table:: **表- org.terasoluna.gfw.web.exception パッケージ配下のクラス**
    :header-rows: 1
    :widths: 10 20 65
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - クラス
@@ -2075,6 +2098,8 @@ SystemExceptionResolverの設定項目について
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2144,6 +2169,8 @@ SystemExceptionResolverの設定項目について
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2202,6 +2229,8 @@ HandlerExceptionResolverLoggingInterceptorの設定項目について
 .. list-table:: **本編で説明していない設定項目一覧**
    :header-rows: 1
    :widths: 5 15 15 45 20
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 項目名
@@ -2270,6 +2299,8 @@ HandlerExceptionResolverLoggingInterceptorの設定項目について
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

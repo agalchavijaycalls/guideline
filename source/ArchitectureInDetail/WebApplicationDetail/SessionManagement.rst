@@ -201,6 +201,8 @@ Overview
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -250,6 +252,8 @@ Overview
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -305,6 +309,8 @@ Spring Securityから提供されているセッションチェック処理を�
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -572,6 +578,8 @@ How to use
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -654,6 +662,8 @@ How to use
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -746,6 +756,8 @@ Controllerのハンドラメソッドの引数に渡すオブジェクトが、\
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -815,6 +827,8 @@ Controllerのハンドラメソッドの引数に渡すオブジェクトが、\
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -918,6 +932,8 @@ Controllerのハンドラメソッドの引数に渡すオブジェクトが、\
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1024,6 +1040,8 @@ component-scanを使用する方法を、以下に示す。
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1078,6 +1096,8 @@ Bean定義ファイル(XML)に定義する方法を、以下に示す。
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1148,6 +1168,8 @@ sessionスコープのBeanの利用
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1234,6 +1256,8 @@ JSPの暗黙オブジェクトである \ ``sessionScope``\ を使用する場�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1314,6 +1338,8 @@ How to extend
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1430,6 +1456,8 @@ Appendix
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1472,6 +1500,8 @@ Appendix
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1554,6 +1584,8 @@ Appendix
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1649,6 +1681,8 @@ Appendix
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1873,6 +1907,8 @@ Appendix
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1983,6 +2019,8 @@ Appendix
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2080,6 +2118,8 @@ sessionスコープのBeanを使った複数のControllerを跨いだ画面遷�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2206,6 +2246,8 @@ sessionスコープのBeanを使った複数のControllerを跨いだ画面遷�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2306,6 +2348,8 @@ sessionスコープのBeanを使った複数のControllerを跨いだ画面遷�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2433,6 +2477,8 @@ sessionスコープのBeanを使った複数のControllerを跨いだ画面遷�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

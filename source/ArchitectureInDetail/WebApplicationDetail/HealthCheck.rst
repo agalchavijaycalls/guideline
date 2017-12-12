@@ -57,6 +57,8 @@ Overview
 .. list-table::
    :header-rows: 1
    :widths: 10 20 70
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - ヘルスチェックの種類
@@ -112,6 +114,8 @@ Overview
 .. list-table::
    :header-rows: 1
    :widths: 25 30 30
+        :class: longtable
+    :class: longtable
 
    * - ヘルスチェック処理結果
      - ステータスコード
@@ -383,6 +387,8 @@ Apache Tilesの設定を受けないようにする
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

@@ -6240,6 +6240,8 @@ REST API実装時に作成したドメイン層のクラスのソースコード
  .. list-table::
    :header-rows: 1
    :widths: 10 35 55
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 分類

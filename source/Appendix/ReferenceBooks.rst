@@ -6,6 +6,8 @@
 .. list-table::
    :header-rows: 1
    :widths: 60 25 15
+        :class: longtable
+    :class: longtable
 
    * - 書籍名
      - 出版社

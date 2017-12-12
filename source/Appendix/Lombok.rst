@@ -167,6 +167,8 @@ Lombokが提供しているクラスを使用するために、Lombokを依存�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -347,6 +349,8 @@ JavaBeanの作成
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -482,6 +486,8 @@ Lombokのアノテーションを使用して\ ``equals``\ メソッドと\ ``ha
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -657,6 +663,8 @@ Lombokのアノテーションを使用しないでロガーインスタンス�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

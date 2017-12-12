@@ -44,6 +44,8 @@ terasoluna-gfw-common
 .. list-table::
     :header-rows: 1
     :widths: 35 65
+        :class: longtable
+   :class: longtable
 
     * - インタフェース
       - 説明
@@ -121,6 +123,8 @@ Date Factoryインタフェースの実装クラスをbean定義ファイルに�
 .. list-table::
    :header-rows: 1
    :widths: 30 30 40
+        :class: longtable
+    :class: longtable
 
    * - クラス名
      - 概要
@@ -212,6 +216,8 @@ pom.xmlの設定
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -269,6 +275,8 @@ DBから取得した固定の時刻を返却する
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -324,6 +332,8 @@ DBから取得した固定の時刻を返却する
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -404,6 +414,8 @@ SQLログを出力するために、 :doc:`../DataAccessDetail/DataAccessCommon`
 .. list-table::
    :header-rows: 1
    :widths: 20 80
+        :class: longtable
+    :class: longtable
 
    * - レコード番号
      - diff
@@ -517,6 +529,8 @@ Date Factoryのメソッドを呼び出すと、DBへのアクセスログが出
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -573,6 +587,8 @@ Testing
 .. list-table::
     :header-rows: 1
     :widths: 15 25 60
+        :class: longtable
+   :class: longtable
 
     * - 環境
       - 使用するDate Factory
@@ -757,6 +773,8 @@ Unit Testでは、時刻を登録してその時刻が想定通りに更新さ�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -859,6 +877,8 @@ Integration Testでは、システム連携先と疎通・連携確認のため�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明

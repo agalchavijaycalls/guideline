@@ -129,6 +129,8 @@ bean定義ファイルは、コードリスト用に作成することを推奨�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -197,6 +199,8 @@ JSPでのコードリスト使用
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -285,6 +289,8 @@ Javaクラスでコードリストを利用する場合、 ``javax.inject.Inject
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -447,6 +453,8 @@ JdbcCodeListの使用方法
 .. list-table::
    :header-rows: 1
    :widths: 40 60
+        :class: longtable
+    :class: longtable
 
    * - authority_id
      - authority_name
@@ -721,6 +729,8 @@ EnumCodeListの使用方法
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -772,6 +782,8 @@ SimpleI18nCodeListの使用方法
 .. tabularcolumns:: |p{0.10\linewidth}|p{0.15\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|
 .. list-table::
    :header-rows: 1
+        :class: longtable
+    :class: longtable
    :stub-columns: 1
    :widths: 10 15 15 15 15 15 15
 
@@ -884,6 +896,8 @@ SimpleI18nCodeListの使用方法
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
   
     * - 項番
       - 説明
@@ -1024,6 +1038,8 @@ JSPでのコードリスト使用
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1142,6 +1158,8 @@ JSPからコードリストを参照する場合は、 ``java.util.Map`` イン�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1241,6 +1259,8 @@ BeanValidationや、メッセージ出力方法の詳細については、 :doc:
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1383,6 +1403,8 @@ JdbcCodeListのrefreshメソッドをServiceクラスで呼び出す場合の実
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1449,6 +1471,8 @@ JdbcCodeListのrefreshメソッドをServiceクラスで呼び出す場合の実
 .. list-table::
    :header-rows: 1
    :widths: 10 15 30 45
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - Reloadable
@@ -1529,6 +1553,8 @@ JdbcCodeListのrefreshメソッドをServiceクラスで呼び出す場合の実
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1670,6 +1696,8 @@ SimpleI18nCodeListのコードリスト設定について、 :ref:`codelisti18n`
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1770,6 +1798,8 @@ NumberRangeCodeListのインターバルの変更
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

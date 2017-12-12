@@ -19,6 +19,8 @@ Problems
  .. list-table::
    :header-rows: 1
    :widths: 10 30 60
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 操作
@@ -80,6 +82,8 @@ Problems
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -260,6 +264,8 @@ PRG(Post-Redirect-Get)パターンについて
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -427,6 +433,8 @@ PRG(Post-Redirect-Get)パターンについて
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -488,6 +496,8 @@ PRG(Post-Redirect-Get)パターンについて
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -684,6 +694,8 @@ PRG(Post-Redirect-Get)パターンの適用
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1011,6 +1023,8 @@ PRG(Post-Redirect-Get)パターンの適用
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番
@@ -1201,6 +1215,8 @@ PRG(Post-Redirect-Get)パターンの適用
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1516,6 +1532,8 @@ TransactionTokenTypeを正しく設定しない場合、通常のオペレーシ
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番
@@ -1614,6 +1632,8 @@ How to extend
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1738,6 +1758,8 @@ Controllerの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明

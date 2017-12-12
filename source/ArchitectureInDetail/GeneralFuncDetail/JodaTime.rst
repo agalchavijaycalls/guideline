@@ -183,6 +183,8 @@ Joda Time, Joda Time JSP tags の利用方法を、以下で説明する。
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -254,6 +256,8 @@ java.util.Dateとの相互運用性
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -302,6 +306,8 @@ java.util.Dateとの相互運用性
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -362,6 +368,8 @@ java.util.Dateとの相互運用性
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -467,6 +475,8 @@ Intervalで調べられることは、以下4つである。
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -608,6 +618,9 @@ Spring MVCを使って、月単位のカレンダーを表示するサンプル�
 .. list-table::
     :header-rows: 1
 
+        :class: longtable
+   :class: longtable
+    :class: longtable
     * - 処理名
       - URL
       - ハンドラメソッド

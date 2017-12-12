@@ -102,6 +102,8 @@ Bean定義ファイル(applicationContext.xml)に、Mapperを作成するFactory
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -200,6 +202,8 @@ Bean間のフィールド名、型が同じ場合のマッピング
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -403,6 +407,8 @@ src/main/resources/META-INF/dozerフォルダ内に、(任意の値)-mapping.xml
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -864,6 +870,8 @@ Dozerは、以下のCollectionタイプの双方向自動マッピングをサ�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -955,6 +963,8 @@ Dozerは、以下のCollectionタイプの双方向自動マッピングをサ�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1179,6 +1189,8 @@ dozer-configration-mapping.xml
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1410,6 +1422,8 @@ map-idを指定しない場合はこの設定は適用されず、全フィー�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1592,6 +1606,8 @@ map-idを指定しない場合はこの設定は適用されず、全フィー�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明

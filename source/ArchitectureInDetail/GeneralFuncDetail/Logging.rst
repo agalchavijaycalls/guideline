@@ -387,6 +387,8 @@ logback.xmlで設定するものは、次の3つになる。
 .. list-table::
    :header-rows: 1
    :widths: 20 80
+        :class: longtable
+    :class: longtable
 
    * - 種類
      - 概要
@@ -424,6 +426,8 @@ appenderを定義しただけではログ出力の際に使用されず、
 .. list-table::
    :header-rows: 1
    :widths: 30 70
+        :class: longtable
+    :class: longtable
 
    * - Appender
      - 概要
@@ -876,6 +880,8 @@ How to extend
 .. list-table::
    :header-rows: 1
    :widths: 10 30 30 30
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - ログ出力方式
@@ -988,6 +994,8 @@ How to extend
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1260,6 +1268,9 @@ logback.xmlの\ ``<pattern>``\ に\ ``%X{X-Track}``\ および、\ ``%X{USER}``\
          .. list-table::
              :header-rows: 1
              :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
 
              * - 項番

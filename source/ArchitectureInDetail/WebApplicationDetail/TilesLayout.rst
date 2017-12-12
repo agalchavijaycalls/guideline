@@ -118,6 +118,8 @@ Spring MVCとTilesの連携
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番
@@ -273,6 +275,8 @@ Tilesを使用するためにカスタムタグ(TLD)を設定する必要があ�
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -360,6 +364,8 @@ Tilesのカスタムタグの詳細は、\ `こちら <http://tiles.apache.org/f
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番
@@ -494,6 +500,8 @@ View名に"staff/createForm"が指定されると、
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番
@@ -611,6 +619,8 @@ How to extend
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -693,6 +703,8 @@ How to extend
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番
@@ -821,6 +833,8 @@ View名に"staff/searchStaff"が指定されると、
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
 
    * - 項番

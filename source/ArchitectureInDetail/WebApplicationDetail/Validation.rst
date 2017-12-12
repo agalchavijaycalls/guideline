@@ -52,6 +52,8 @@ Webアプリケーションの入力チェックには、サーバサイドで�
 .. list-table::
    :header-rows: 1
    :widths: 15 30 25 30
+        :class: longtable
+    :class: longtable
 
 
    * - 種類
@@ -164,6 +166,8 @@ Bean ValidationのAPI仕様クラス(\ ``javax.validation``\ パッケージの�
 .. list-table::
    :header-rows: 1
    :widths: 20 30 50
+        :class: longtable
+    :class: longtable
 
 
    * - フィールド名
@@ -382,6 +386,9 @@ Bean ValidationのAPI仕様クラス(\ ``javax.validation``\ パッケージの�
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -532,6 +539,8 @@ NameとEmailが空文字であることに対するエラーメッセージと�
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -915,6 +924,9 @@ ECサイトにおける「注文」処理の例を考える。「注文」フォ
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -1130,6 +1142,9 @@ ECサイトにおける「注文」処理の例を考える。「注文」フォ
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -1421,6 +1436,9 @@ Bean Validationでグループを指定する場合、アノテーションの\ 
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -1577,6 +1595,9 @@ Bean Validationでグループを指定する場合、アノテーションの\ 
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -1727,6 +1748,9 @@ Bean Validationでグループを指定する場合、アノテーションの\ 
    .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -1876,6 +1900,9 @@ Spring Validatorによる相関項目チェック実装
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -2229,6 +2256,8 @@ Spring MVCによるBean Validationのエラーメッセージは、以下の順�
 .. list-table::
    :header-rows: 1
    :widths: 50 50
+        :class: longtable
+    :class: longtable
 
 
    * - プロパティファイル名
@@ -2390,6 +2419,8 @@ Bean Validationのアノテーションの\ ``message``\ 属性に指定され�
      .. list-table::
         :header-rows: 1
         :widths: 10 90
+   :class: longtable
+    :class: longtable
 
         * - 項番
           - 説明
@@ -2921,6 +2952,9 @@ Java SE 8とHibernate Validator 5.2+を組み合わせることで、\ ``List<@N
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -3073,6 +3107,9 @@ Formatterで\ ``String``\ から\ ``Role``\ 、\ ``Role``\ から\ ``String``\ �
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -3191,6 +3228,9 @@ Controller側では\ ``Role``\の\ ``List``\ 、JSP側では\ ``String``\ の\ `
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -3401,6 +3441,9 @@ Controller側では\ ``Role``\の\ ``List``\ 、JSP側では\ ``String``\ の\ `
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -3568,6 +3611,9 @@ Controller側では\ ``Role``\の\ ``List``\ 、JSP側では\ ``String``\ の\ `
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -3797,6 +3843,8 @@ Spring Frameworkから提供されている\ ``org.springframework.validation.be
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3931,6 +3979,8 @@ Method Validationを実行するAOPを適用するためには、
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4093,6 +4143,8 @@ Bean Validationの制約アノテーションを指定する方法について�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4359,6 +4411,8 @@ Hibernate Validatorの代表的なアノテーション(\ ``org.hibernate.valida
 .. list-table::
    :header-rows: 1
    :widths: 15 30 30 25
+        :class: longtable
+    :class: longtable
 
    * - アノテーション
      - 対象の型
@@ -4516,6 +4570,8 @@ terasoluna-gfw-codepointsのチェックルール
 .. list-table::
     :header-rows: 1
     :widths: 15 30 30 25
+        :class: longtable
+   :class: longtable
 
     * - アノテーション
       - 対象の型
@@ -4808,6 +4864,8 @@ terasoluna-gfw-validatorのチェックルール
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5053,6 +5111,9 @@ Native to Asciiを行わずにBean Validationのメッセージ（\ ``Validation
  .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -5146,6 +5207,8 @@ OSコマンドインジェクションを起こさないためには、可能な
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

@@ -91,6 +91,9 @@ Spring Dataより提供されているページ検索用の機能は、以下の
      .. list-table::
          :header-rows: 1
          :widths: 10 15 75
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
          * - 項番
            - パラメータ名
@@ -344,6 +347,9 @@ Spring Dataより提供されているページ検索用の機能は、以下の
      .. list-table::
          :header-rows: 1
          :widths: 10 50 30
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
          * - 項番
            - リンク名
@@ -690,6 +696,8 @@ Spring Dataのページネーション機能を有効化するための設定
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -784,6 +792,8 @@ Spring Dataのページネーション機能を有効化するための設定
  .. list-table::
     :header-rows: 1
     :widths: 10 70 20
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -950,6 +960,8 @@ JSPの実装(基本編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1055,6 +1067,8 @@ JSPの実装(基本編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1140,6 +1154,8 @@ JSPの実装(基本編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1328,6 +1344,8 @@ JSPの実装(基本編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1427,6 +1445,8 @@ JSPの実装(基本編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1501,6 +1521,8 @@ JSPの実装(レイアウト変更編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1566,6 +1588,8 @@ disabled状態のリンクの削除
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1642,6 +1666,8 @@ JSPの実装(動作編)
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1885,6 +1911,8 @@ Appendix
  .. list-table::
     :header-rows: 1
     :widths: 10 20 55 15
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - プロパティ名

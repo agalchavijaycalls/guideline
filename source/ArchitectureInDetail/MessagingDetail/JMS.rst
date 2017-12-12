@@ -120,6 +120,9 @@ JMSとは
  .. list-table::
   :header-rows: 1
   :widths: 20 80
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
   * - 構成
     - 説明
@@ -263,6 +266,8 @@ Spring Frameworkのコンポーネントを使用したJMSの利用
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -399,6 +404,9 @@ How to use
  .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -474,6 +482,8 @@ How to use
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -688,6 +698,8 @@ How to use
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -749,6 +761,8 @@ How to use
      .. list-table::
         :header-rows: 1
         :widths: 20 60 20
+   :class: longtable
+    :class: longtable
 
         * - Templateクラス
           - 例外の変換を行うメソッド
@@ -856,6 +870,8 @@ How to use
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1009,6 +1025,9 @@ DBのトランザクション管理を行う必要があるアプリケーショ
    .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -1199,6 +1218,8 @@ DBのトランザクション管理を行う必要があるアプリケーショ
  .. list-table::
     :header-rows: 1
     :widths: 10 20 70
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 項目
@@ -1329,6 +1350,9 @@ DBのトランザクション管理を行う必要があるアプリケーショ
   .. list-table::
      :header-rows: 1
      :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
      * - 項番
        - 説明
@@ -1384,6 +1408,8 @@ DBのトランザクション管理を行う必要があるアプリケーショ
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1483,6 +1509,8 @@ DBのトランザクション管理を行う必要があるアプリケーショ
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1663,6 +1691,9 @@ DBトランザクション境界がJMSトランザクション境界の外側に
    .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -1761,6 +1792,9 @@ DBトランザクション境界がJMSトランザクション境界の外側に
     .. list-table::
        :header-rows: 1
        :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
        * - 項番
          - 説明
@@ -1879,6 +1913,9 @@ DBトランザクション境界がJMSトランザクション境界の外側に
    .. list-table::
       :header-rows: 1
       :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明
@@ -1967,6 +2004,8 @@ DBトランザクション境界がJMSトランザクション境界の外側に
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2180,6 +2219,9 @@ Apache ActiveMQを利用する場合の設定について説明する。
    .. list-table::
        :header-rows: 1
        :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
        * - 項番
          - 説明
@@ -2297,6 +2339,8 @@ Apache ActiveMQを利用する場合の設定について説明する。
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2483,6 +2527,9 @@ Apache ActiveMQを利用する場合
    .. list-table::
       :header-rows: 1
       :widths: 13 87
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
       * - 項番
         - 説明

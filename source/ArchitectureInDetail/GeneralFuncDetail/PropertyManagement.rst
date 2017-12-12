@@ -18,6 +18,8 @@ Overview
 .. list-table::
     :header-rows: 1
     :widths: 10 20 35 35
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 分類
@@ -138,6 +140,8 @@ How to use
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -290,6 +294,8 @@ Javaクラス内でプロパティを使用する
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -374,6 +380,8 @@ How to extend
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -463,6 +471,8 @@ How to extend
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明

@@ -147,6 +147,8 @@ AcceptHeaderLocaleResolverの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 説明
@@ -224,6 +226,8 @@ JSPの実装
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 説明
@@ -299,6 +303,8 @@ LocaleChangeInterceptorの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 説明
@@ -382,6 +388,8 @@ Localeをクライアントに保存する場合は、\ ``CookieLocaleResolver``
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 説明
@@ -495,6 +503,8 @@ JSPの実装
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -545,6 +555,8 @@ JSPの実装
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

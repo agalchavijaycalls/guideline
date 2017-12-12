@@ -244,6 +244,9 @@ Servlet 3.0のアップロード機能を有効化するために、以下の設
      .. list-table::
        :header-rows: 1
        :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
        * - 項番
          - 説明
@@ -324,6 +327,8 @@ multipart/form-dataリクエストの時、ファイルアップロードで許�
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -405,6 +410,8 @@ multipart/form-dataリクエストの時、ファイルアップロードで許�
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -490,6 +497,8 @@ multipart/form-dataリクエストの時、ファイルアップロードで許�
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -578,6 +587,8 @@ JSPの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -835,6 +846,8 @@ Controllerの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -932,6 +945,8 @@ Controllerの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1028,6 +1043,8 @@ Controllerの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1135,6 +1152,8 @@ Controllerの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1226,6 +1245,8 @@ Validatorの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1293,6 +1314,8 @@ JSPの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1422,6 +1445,8 @@ Controllerの実装
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1576,6 +1601,8 @@ How to extend
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1765,6 +1792,8 @@ Commons FileUploadを使用する場合は以下の設定を行う。
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -1858,6 +1887,8 @@ Commons FileUploadを使用する場合は以下の設定を行う。
 .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明

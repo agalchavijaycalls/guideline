@@ -45,6 +45,8 @@ EL Functions
  .. list-table::
     :header-rows: 1
     :widths: 5 25 60
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 関数名
@@ -82,6 +84,8 @@ EL Functions
  .. list-table::
     :header-rows: 1
     :widths: 5 25 60
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 関数名
@@ -188,6 +192,8 @@ f:h() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -246,6 +252,8 @@ f:js() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -299,6 +307,8 @@ f:hjs() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -369,6 +379,8 @@ f:query() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -425,6 +437,8 @@ f:query() 関数仕様
      .. list-table::
         :header-rows: 1
         :widths: 45 30 25
+   :class: longtable
+    :class: longtable
 
         * - 条件
           - パラメータ名の変換仕様
@@ -515,6 +529,8 @@ f:u() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -567,6 +583,8 @@ f:link() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -622,6 +640,8 @@ f:link() 使用方法
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -679,6 +699,8 @@ f:br() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -737,6 +759,8 @@ f:cut() 関数仕様
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 型
@@ -777,6 +801,8 @@ f:cut() 使用方法
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

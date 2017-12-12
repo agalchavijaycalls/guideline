@@ -58,6 +58,8 @@ MyBatis3のコンポーネント構成について
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - コンポーネント/設定ファイル
@@ -141,6 +143,8 @@ MyBatis3のコンポーネント構成について
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
 
     * - 項番
@@ -266,6 +270,8 @@ MyBatis-Springのコンポーネント構成について
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
 
     * - 項番
@@ -344,6 +350,8 @@ How to use
  .. list-table::
     :header-rows: 1
     :widths: 10 20 60
+        :class: longtable
+   :class: longtable
 
 
     * - 項番
@@ -544,6 +552,8 @@ MyBatis3とSpringを連携する場合、データソースはSpringのDIコン�
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -669,6 +679,8 @@ MyBatis3とSpringを連携する場合、MyBatis-Springのコンポーネント�
  .. list-table::
    :header-rows: 1
    :widths: 10 80
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -801,6 +813,8 @@ MyBatis3では、SQLを実行するモードとして以下の3種類を用意�
  .. list-table::
     :header-rows: 1
     :widths: 10 15 65
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - モード
@@ -985,6 +999,8 @@ NULL値とJDBC型のマッピング設定
  .. list-table::
    :header-rows: 1
    :widths: 10 80
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1219,6 +1235,8 @@ Joda-TimeのクラスとJDBC型をマッピングする\ ``TypeHandler`` \の作
      .. list-table::
         :header-rows: 1
         :widths: 10 80
+   :class: longtable
+    :class: longtable
 
         * - 項番
           - 説明
@@ -1290,6 +1308,8 @@ Repositoryインタフェース毎にマッピングファイルを作成する�
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1480,6 +1500,8 @@ MyBatis3では、検索結果(\ ``ResultSet``\)のカラムとJavaBeanのプロ�
  .. list-table::
    :header-rows: 1
    :widths: 10 80
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1625,6 +1647,8 @@ MyBatis設定ファイル(\ :file:`mybatis-config.xml`\)に以下の設定を追
  .. list-table::
    :header-rows: 1
    :widths: 10 80
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -1801,6 +1825,8 @@ PKが単一カラムで構成されるテーブルより、PKを指定してEnti
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1931,6 +1957,8 @@ PKが単一カラムで構成されるテーブルより、PKを指定してEnti
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2067,6 +2095,8 @@ Entityの検索
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2264,6 +2294,8 @@ Entityの件数の取得
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2372,6 +2404,8 @@ SQLに取得範囲の条件を記述する必要がない。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2603,6 +2637,8 @@ MyBatis3標準方式に比べて効率的に取得範囲のEntityを取得する
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2734,6 +2770,8 @@ MyBatis3標準方式に比べて効率的に取得範囲のEntityを取得する
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2835,6 +2873,8 @@ Entityを1件登録する際の実装例を以下に示す。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2994,6 +3034,8 @@ MyBatis3では、マッピングファイル内でキーを生成する仕組み
  .. list-table::
     :header-rows: 1
     :widths: 10 10 70
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 属性
@@ -3124,6 +3166,8 @@ JDBCのバッチ更新機能を使用する方法については、「:ref:`Data
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3296,6 +3340,8 @@ Entityを1件更新する際の実装例を以下に示す。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3420,6 +3466,8 @@ Entityを1件更新する際の実装例を以下に示す。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3550,6 +3598,8 @@ JDBCのバッチ更新機能を使用する方法については、「:ref:`Data
  .. list-table::
     :header-rows: 1
     :widths: 10 10 70
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 属性
@@ -3678,6 +3728,8 @@ Entityを1件削除する際の実装例を以下に示す。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3804,6 +3856,8 @@ JDBCのバッチ更新機能を使用する方法については、「:ref:`Data
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3880,6 +3934,8 @@ MyBatis3では、動的にSQLを組み立てるために、以下のXML要素を
  .. list-table::
     :header-rows: 1
     :widths: 10 10 70
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 要素名
@@ -4020,6 +4076,8 @@ choose要素の実装
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4206,6 +4264,8 @@ set要素の実装例
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4320,6 +4380,8 @@ foreach要素の実装例
      .. list-table::
         :header-rows: 1
         :widths: 10 15 65
+   :class: longtable
+    :class: longtable
 
         * - 項番
           - 属性
@@ -4502,6 +4564,8 @@ LIKE検索用のエスケープ処理は、
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4612,6 +4676,8 @@ MyBatis3では、SQLに値を埋め込む仕組みとして、以下の2つの�
  .. list-table::
     :widths: 10 80
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4824,6 +4890,8 @@ SQL文(又はSQL文の一部)を共有する事ができる。
  .. list-table::
     :widths: 10 80
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5031,6 +5099,8 @@ MyBatis3では、検索結果を1件単位で処理する仕組みを提供し�
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5174,6 +5244,9 @@ MyBatis3では、検索結果を1件単位で処理する仕組みを提供し�
      .. list-table::
          :header-rows: 1
          :widths: 10 15 65
+        :class: longtable
+   :class: longtable
+    :class: longtable
 
          * - 項番
            - メソッド
@@ -5373,6 +5446,8 @@ RepositoryのBean定義を行えばよい。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5499,6 +5574,8 @@ RepositoryのBean定義を行えばよい。
  .. list-table::
     :header-rows: 1
     :widths: 10 15 65
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 属性
@@ -5642,6 +5719,8 @@ RepositoryのBean定義を行えばよい。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5760,6 +5839,8 @@ MyBatis 3.3.0以降のバージョンでは、Mapperインタフェースに\ ``
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5863,6 +5944,8 @@ Repositoryのメソッドの呼び出し順番を間違えると、性能向上�
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -5937,6 +6020,8 @@ MyBatis3から呼び出す方法について説明を行う。
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -6180,6 +6265,8 @@ TypeAliasの設定は、クラス単位で設定する事もできる。
  .. list-table::
    :header-rows: 1
    :widths: 10 80
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - 説明
@@ -6335,6 +6422,8 @@ MyBatis3では、JDBCドライバから接続しているデータベースの�
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -6460,6 +6549,8 @@ MyBatis3では、JDBCドライバから接続しているデータベースの�
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -6980,6 +7071,8 @@ SQLの実装
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -7191,6 +7284,8 @@ Orderオブジェクトへのマッピングの実装
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -7325,6 +7420,8 @@ OrderItemオブジェクトへのマッピングの実装
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -7459,6 +7556,8 @@ Categoryオブジェクトへのマッピングの実装
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -7620,6 +7719,8 @@ Couponオブジェクトへのマッピングの実装
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -7849,6 +7950,8 @@ MyBatis3では、"Lazy Load"の使用有無を、
  .. list-table::
     :header-rows: 1
     :widths: 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -7978,6 +8081,8 @@ MyBatis3では、"Lazy Load"を実行するタイミングを制御するため�
       .. list-table::
         :header-rows: 1
         :widths: 15 75
+   :class: longtable
+    :class: longtable
 
         * - 項番
           - 説明

@@ -56,6 +56,8 @@ Ajax通信時で使用されるContent-Type(``application/xml`` や ``applicatio
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -278,6 +280,8 @@ Ajaxを使ってデータを取得する方法について説明する。
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -335,6 +339,8 @@ Ajaxを使ってデータを取得する方法について説明する。
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -421,6 +427,9 @@ Ajaxを使ってデータを取得する方法について説明する。
      .. list-table::
        :header-rows: 1
        :widths: 10 90
+        :class: longtable
+   :class: longtable
+    :class: longtable
     
        * - | 項番
          - | 説明
@@ -561,6 +570,8 @@ Ajaxを使ってフォームのデータをPOSTし、処理結果を取得する
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -622,6 +633,8 @@ Ajaxを使ってフォームのデータをPOSTし、処理結果を取得する
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -879,6 +892,8 @@ Ajaxを使ってフォームのデータをJSON形式に変換してからPOST�
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -1024,6 +1039,8 @@ BindException のハンドリング
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -1167,6 +1184,8 @@ MethodArgumentNotValidException のハンドリング
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -1252,6 +1271,8 @@ BindingResult を使用したハンドリング
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明
@@ -1401,6 +1422,8 @@ BindingResult を使用したハンドリング
  .. list-table::
    :header-rows: 1
    :widths: 10 90
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 説明

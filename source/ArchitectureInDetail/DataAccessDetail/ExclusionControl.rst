@@ -84,6 +84,8 @@ Problem2
  .. list-table::
     :header-rows: 1
     :widths: 10 5 5 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - UserA
@@ -165,6 +167,8 @@ ANSI/ISO SQL標準では、トランザクションの分離レベル（各ト�
 .. list-table::
    :header-rows: 1
    :widths: 10 20 20 20 20
+        :class: longtable
+    :class: longtable
 
    * - | 項番
      - | 分離レベル
@@ -277,6 +281,8 @@ ANSI/ISO SQL標準では、トランザクションの分離レベル（各ト�
  .. list-table:: ロックの種類
    :header-rows: 1
    :widths: 10 15 40 35
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - ロック種類
@@ -504,6 +510,8 @@ ANSI/ISO SQL標準では、トランザクションの分離レベル（各ト�
  .. list-table::
     :header-rows: 1
     :widths: 10 5 5 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - Staff A
@@ -627,6 +635,8 @@ ANSI/ISO SQL標準では、トランザクションの分離レベル（各ト�
  .. list-table::
     :header-rows: 1
     :widths: 10 5 5 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - Online
@@ -764,6 +774,8 @@ ANSI/ISO SQL標準では、トランザクションの分離レベル（各ト�
  .. list-table::
     :header-rows: 1
     :widths: 10 5 5 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - Program A
@@ -888,6 +900,8 @@ RDBMSの行ロック機能を使って排他制御を行う場合は、SQLの中
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -974,6 +988,8 @@ RDBMSの行ロック機能を使って排他制御を行う場合は、SQLの中
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1045,6 +1061,8 @@ RDBMSの行ロック機能を使って排他制御を行う場合は、SQLの中
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1136,6 +1154,8 @@ RDBMSの行ロック機能を使って排他制御を行う場合は、SQLの中
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1223,6 +1243,8 @@ RDBMSの行ロック機能と楽観ロック機能を併用するアプリケー
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1297,6 +1319,8 @@ RDBMSの行ロック機能
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1376,6 +1400,8 @@ JPAでは、バージョン管理用のプロパティに、\ ``@javax.persisten
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1499,6 +1525,8 @@ RDBMSの行ロック機能と、楽観ロック機能を両方使用する場合
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1552,6 +1580,8 @@ Spring Data JPAでは、\ ``@org.springframework.data.jpa.repository.Lock``\ ア
  .. list-table::
    :header-rows: 1
    :widths: 10 25 45 20
+        :class: longtable
+    :class: longtable
 
    * - 項番
      - LockModeType
@@ -1643,6 +1673,8 @@ Query毎に適応する方法は、以下の通りである。
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1723,6 +1755,8 @@ Controllerで適切にハンドリングする必要がある。
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1796,6 +1830,8 @@ Controllerで適切にハンドリングする必要がある。
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

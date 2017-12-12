@@ -441,6 +441,8 @@ EntityManagerの設定
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -502,6 +504,8 @@ PlatformTransactionManagerの設定
  .. list-table::
     :header-rows: 1
     :widths: 6 94
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -665,6 +669,8 @@ ControllerやJSP等のアプリケーション層でEntityのLazy Fetchを行う
  .. list-table::
     :header-rows: 1
     :widths: 6 94
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -745,6 +751,8 @@ Spring DataではEntity毎のRepositoryインタフェースを作成する方�
  .. list-table::
     :widths: 10 35 55
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 作成方法
@@ -812,6 +820,8 @@ Spring Dataから提供されているインタフェースを継承してEntity
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1062,6 +1072,8 @@ Spring Dataより提供されているインタフェースや共通インタフ
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1177,6 +1189,8 @@ Entityのロックを取得する
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1265,6 +1279,8 @@ value属性にQueryヒント( ``@javax.persistence.QueryHint`` )を指定する�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1359,6 +1375,8 @@ Queryメソッド呼び出し時に実行するQueryの指定方法について�
  .. list-table::
     :widths: 10 20 20 50
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 一致方法
@@ -1447,6 +1465,8 @@ Queryメソッド呼び出し時に実行するQueryの指定方法について�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1511,6 +1531,8 @@ Queryメソッド呼び出し時に実行するQueryの指定方法について�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1568,6 +1590,8 @@ Queryメソッド呼び出し時に実行するQueryの指定方法について�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1644,6 +1668,8 @@ Queryメソッド呼び出し時に実行するQueryの指定方法について�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1695,6 +1721,8 @@ Spring Data JPAから提供されているプロパティファイル(classpath:
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1772,6 +1800,8 @@ Entityの検索方法について、目的別に説明する。
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1835,6 +1865,8 @@ Entityの検索方法について、目的別に説明する。
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1895,6 +1927,8 @@ Entityの検索方法について、目的別に説明する。
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1980,6 +2014,8 @@ Entityの動的条件による検索処理の実装
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2159,6 +2195,8 @@ Entityの動的条件による検索処理の実装
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2264,6 +2302,8 @@ Entityの動的条件による検索処理の実装
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2335,6 +2375,8 @@ Entityの動的条件による検索処理の実装
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2538,6 +2580,8 @@ ID(Primary Key)がわかっている場合は、Repositryインタフェース�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2621,6 +2665,8 @@ IDがわからない場合は、ID以外の条件でEntityを検索するQuery�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2711,6 +2757,8 @@ Entityを追加したい場合は、Entityオブジェクトを生成し、Repos
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -2852,6 +2900,8 @@ Entityと関連Entityを一緒に追加したい場合は、Repositryインタ�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3004,6 +3054,8 @@ Entityと関連Entityを一緒に追加したい場合は、Repositryインタ�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3086,6 +3138,8 @@ Entityを更新したい場合は、Repositoryインタフェースのメソッ�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3157,6 +3211,8 @@ Entityを更新したい場合は、Repositoryインタフェースのメソッ�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3229,6 +3285,8 @@ Entityと関連Entityを一緒に削除したい場合は、Repositryインタ�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3336,6 +3394,8 @@ Entityと関連Entityを一緒に削除したい場合は、Repositryインタ�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3431,6 +3491,8 @@ LIKE検索時のエスケープについて
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3496,6 +3558,8 @@ LIKE検索時のエスケープについて
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3564,6 +3628,8 @@ JOIN FETCHについて
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3643,6 +3709,8 @@ Entity毎のRepositoryインタフェースに個別にカスタムメソッド�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3698,6 +3766,8 @@ Entity毎のRepositoryインタフェースに個別にカスタムメソッド�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3752,6 +3822,8 @@ Entity毎のRepositoryインタフェースに個別にカスタムメソッド�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3856,6 +3928,8 @@ Entity毎のRepositoryインタフェースに個別にカスタムメソッド�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3896,6 +3970,8 @@ Entity毎のRepositoryインタフェースに個別にカスタムメソッド�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -3971,6 +4047,8 @@ Queryの取得結果をEntityにマッピングするのではなく、別のオ
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4095,6 +4173,8 @@ Spring Data JPAでは、新たに作成されたEntityと更新されたEntity�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4153,6 +4233,8 @@ Spring Data JPAでは、新たに作成されたEntityと更新されたEntity�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4215,6 +4297,8 @@ Spring Data JPAでは、新たに作成されたEntityと更新されたEntity�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -4312,6 +4396,8 @@ Repositoryインタフェースのメソッド呼び出し時に実行されるJ
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
     
     * - 項番
       - 説明
@@ -4415,6 +4501,8 @@ Repositoryインタフェースのメソッド呼び出して取得したEntity�
  .. list-table::
     :widths: 10 90
     :header-rows: 1
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明

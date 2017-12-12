@@ -107,6 +107,8 @@ OSS/Third-Partyライブラリ提供のJDBCデータソース
  .. list-table:: **OSS/Third-Partyライブラリから提供されているJDBCデータソース**
     :header-rows: 1
     :widths: 10 35 55
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - ライブラリ名
@@ -205,6 +207,8 @@ Spring Framework提供のJDBCデータソース
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -296,6 +300,8 @@ How to use
  .. list-table::
     :header-rows: 1
     :widths: 10 10 80
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 属性名
@@ -425,6 +431,8 @@ log4jdbc提供のデータソースの設定
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -527,6 +535,8 @@ log4jdbcのオプションの設定
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -645,6 +655,8 @@ AbstractRoutingDataSourceの実装
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -711,6 +723,8 @@ JOIN(Join Fetch)を使用して解決する
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -788,6 +802,8 @@ LIKE検索を行う場合は、検索条件として使用する値を、LIKE検
 .. list-table::
     :header-rows: 1
     :widths: 10 40 50
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - クラス
@@ -919,6 +935,8 @@ LIKE検索を行う場合は、検索条件として使用する値を、LIKE検
  .. list-table::
     :header-rows: 1
     :widths: 10 15 20 10 45
+        :class: longtable
+   :class: longtable
 
     * - | 項番
       - | 対象
@@ -997,6 +1015,8 @@ LIKE検索時のエスケープ処理の実装例については、使用するO
      .. list-table::
         :header-rows: 1
         :widths: 10 90
+   :class: longtable
+    :class: longtable
 
         * - | 項番
           - | 説明
@@ -1095,6 +1115,8 @@ Sequencerをbean定義する。
  .. list-table::
     :header-rows: 1
     :widths: 10 90
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - 説明
@@ -1173,6 +1195,8 @@ Spring Frameworkのデータアクセス例外へ変換する役割を持つク�
  .. list-table:: **Spring Frameworkのデータアクセス例外への変換クラス**
     :header-rows: 1
     :widths: 10 30 60
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - クラス名
@@ -1234,6 +1258,8 @@ Spring Frameworkから提供されているJDBCデータソースクラス
  .. list-table:: **Spring Frameworkから提供されているJDBCデータソースのアダプター**
     :header-rows: 1
     :widths: 10 35 55
+        :class: longtable
+   :class: longtable
 
     * - 項番
       - クラス名
