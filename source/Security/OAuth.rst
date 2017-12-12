@@ -39,6 +39,7 @@ OAuth 2.0はRFCとして仕様化されており、関連する複数の技術�
 .. list-table:: **OAuth 2.0の主要仕様**
     :header-rows: 1
     :widths: 15 30 55
+    :class: longtable
 
     * - RFC
       - 概要
@@ -182,6 +183,7 @@ OAuth 2.0では、以下のような流れでリソースへのアクセスを�
 .. list-table:: **OAuth 2.0のプロトコルフロー**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -226,6 +228,7 @@ OAuth 2.0では、グラントタイプとして以下の4つを定義してい�
     :name: OAuthAuthorizationGrant　
     :header-rows: 1
     :widths: 25 75
+    :class: longtable
 
     * - グラントタイプ
       - 説明
@@ -347,6 +350,7 @@ OAuth 2.0では、グラントタイプとして以下の4つを定義してい�
 .. list-table:: **リソースオーナパスワードクレデンシャルグラントフロー**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -372,6 +376,7 @@ OAuth 2.0では、グラントタイプとして以下の4つを定義してい�
 .. list-table:: **クライアントクレデンシャルグラントフロー**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -441,6 +446,7 @@ OAuth 2.0では、グラントタイプとして以下の4つを定義してい�
 .. list-table:: **アクセストークンの発行から再発行までのフロー**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -473,6 +479,7 @@ OAuth 2.0では、グラントタイプとして以下の4つを定義してい�
 .. list-table:: **リフレッシュトークンの発行から再発行までのフロー**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -517,6 +524,7 @@ Spring Security OAuthを使用して認可サーバ、リソースサーバ、�
 .. list-table:: **Spring Security OAuthのフロー**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
 
     * - 項番
@@ -607,6 +615,7 @@ Spring Security OAuthは、認可エンドポイント（\ ``AuthorizationEndpoi
 .. list-table:: **認可サーバの動き（認可エンドポイントアクセス時）**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -666,6 +675,7 @@ RFC 6749の\ `4.1.2.1. Error Response <https://tools.ietf.org/html/rfc6749#secti
 .. list-table:: **認可サーバの動き（不正クライアントエラーのエラーハンドリング）**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -680,6 +690,7 @@ RFC 6749の\ `4.1.2.1. Error Response <https://tools.ietf.org/html/rfc6749#secti
 .. list-table:: **認可サーバの動き（不正クライアントエラー以外のエラーハンドリング）**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -711,6 +722,7 @@ Spring Security OAuthは、トークンエンドポイント（\ ``TokenEndpoint
 .. list-table:: **認可サーバの動き（トークンエンドポイントアクセス時）**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -753,6 +765,7 @@ Spring Securityの詳細については :ref:`SpringSecurityAuthentication`\ を
 .. list-table:: **リソースサーバの動き**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -875,6 +888,7 @@ Spring Security OAuthが提供している機能を使用するために、Sprin
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -952,6 +966,7 @@ Spring Security OAuthが提供している機能を使用するために、Sprin
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -979,6 +994,7 @@ Spring Security OAuthが提供している機能を使用するために、Sprin
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1126,6 +1142,7 @@ Spring Security OAuthではクライアント情報を取得するためのイ�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1212,6 +1229,7 @@ Spring Security OAuthではクライアント情報を取得するためのイ�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1382,6 +1400,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1416,6 +1435,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1470,6 +1490,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1525,6 +1546,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1567,6 +1589,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1612,6 +1635,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1649,6 +1673,7 @@ Spring Securityの詳細については \ :doc:`../../Security/Authentication`\ 
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1766,6 +1791,7 @@ HTTPアクセスを介した連携ついては本節のHow To Extendにて説明
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1793,6 +1819,7 @@ HTTPアクセスを介した連携ついては本節のHow To Extendにて説明
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -1969,6 +1996,7 @@ HTTPアクセスを介した連携ついては本節のHow To Extendにて説明
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2039,6 +2067,7 @@ Spring Security OAuthが取り扱う情報（認可コード、認可情報、�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2172,6 +2201,7 @@ Spring Security OAuthが取り扱う情報（認可コード、認可情報、�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2231,6 +2261,7 @@ Spring Security OAuthが取り扱う情報（認可コード、認可情報、�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2257,6 +2288,7 @@ Spring Security OAuthが用意している主なExpressionを紹介する。
 .. list-table:: **Spring Security OAuthが用意しているExpression**
     :header-rows: 1
     :widths: 35 65
+    :class: longtable
 
     * - Expression
       - 説明
@@ -2349,6 +2381,7 @@ Spring Security OAuthが用意している主なExpressionを紹介する。
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2385,6 +2418,7 @@ Spring Security OAuthが用意している主なExpressionを紹介する。
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2469,6 +2503,7 @@ Spring Security OAuthが用意している主なExpressionを紹介する。
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2499,6 +2534,7 @@ OAuth2ClientContextFilterの適用
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2527,6 +2563,7 @@ OAuth2ClientContextFilterの適用
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2580,6 +2617,7 @@ OAuth2ClientContextFilterの適用
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2613,6 +2651,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2630,6 +2669,7 @@ OAuth2RestTemplateの設定
 .. list-table:: **リソース詳細情報**
     :header-rows: 1
     :widths: 35 65
+    :class: longtable
 
     * - 項目
       - 説明
@@ -2658,6 +2698,7 @@ OAuth2RestTemplateの設定
             :header-rows: 1
             :stub-columns: 1
             :widths: 50 50
+            :class: longtable
 
             * - プレースホルダのキー
               - 設定値
@@ -2732,6 +2773,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2808,6 +2850,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2895,6 +2938,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -2956,6 +3000,7 @@ OAuth2RestTemplateの設定
 .. list-table:: **認可エンドポイントで発生するエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -3028,6 +3073,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3063,6 +3109,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3097,6 +3144,7 @@ OAuth2RestTemplateの設定
     :header-rows: 1
     :stub-columns: 1
     :widths: 30 70
+    :class: longtable
 
     * - サーバ
       - 認可コードグラントからの変更点
@@ -3140,6 +3188,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3200,6 +3249,7 @@ JSON形式のデータを取得し、画面に表示させる方法を説明す�
             :header-rows: 1
             :stub-columns: 1
             :widths: 15 20 65
+            :class: longtable
 
             * - 格納先
               - 保持期間
@@ -3544,6 +3594,7 @@ JSON形式のデータを取得し、画面に表示させる方法を説明す�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3633,6 +3684,7 @@ JSON形式のデータを取得し、画面に表示させる方法を説明す�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3687,6 +3739,7 @@ JSON形式のデータを取得し、画面に表示させる方法を説明す�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3747,6 +3800,7 @@ JSPでは、前述の独自に実装したJavaScriptを利用して、認可サ�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3841,6 +3895,7 @@ JSPでは、前述の独自に実装したJavaScriptを利用して、認可サ�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -3894,6 +3949,7 @@ JSPでは、前述の独自に実装したJavaScriptを利用して、認可サ�
 .. list-table:: **リソースサーバで発生するエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -3932,6 +3988,7 @@ JSPでは、前述の独自に実装したJavaScriptを利用して、認可サ�
     :header-rows: 1
     :stub-columns: 1
     :widths: 30 70
+    :class: longtable
 
     * - サーバ
       - 認可コードグラントからの変更点
@@ -3977,6 +4034,7 @@ JSPでは、前述の独自に実装したJavaScriptを利用して、認可サ�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4121,6 +4179,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4139,6 +4198,7 @@ OAuth2RestTemplateの設定
      .. list-table::
          :header-rows: 1
          :widths: 35 65
+         :class: longtable
 
          * - 項目
            - 説明
@@ -4207,6 +4267,7 @@ OAuth2RestTemplateの設定
 .. list-table:: **トークンエンドポイントで発生するエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -4262,6 +4323,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4298,6 +4360,7 @@ OAuth2RestTemplateの設定
     :header-rows: 1
     :stub-columns: 1
     :widths: 30 70
+    :class: longtable
 
     * - サーバ
       - 認可コードグラントからの変更点
@@ -4344,6 +4407,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4467,6 +4531,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4505,6 +4570,7 @@ OAuth2RestTemplateの設定
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4562,6 +4628,7 @@ How to extend
     :header-rows: 1
     :stub-columns: 1
     :widths: 20 80
+    :class: longtable
 
     * - 順番
       - タグ
@@ -4594,6 +4661,7 @@ How to extend
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4660,6 +4728,7 @@ HTTPアクセスを介した認可サーバとリソースサーバの連携
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4703,6 +4772,7 @@ HTTPアクセスを介した認可サーバとリソースサーバの連携
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4756,6 +4826,7 @@ HTTPアクセスを介した認可サーバとリソースサーバの連携
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4819,6 +4890,7 @@ DefaultAccessTokenConverterとは
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4851,6 +4923,7 @@ DefaultAccessTokenConverterとは
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4894,6 +4967,7 @@ DefaultAccessTokenConverterとは
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -4996,6 +5070,7 @@ DefaultAccessTokenConverterとは
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -5034,6 +5109,7 @@ DefaultAccessTokenConverterとは
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -5065,6 +5141,7 @@ RFCに準拠したエンドポイントや、認可サーバ内でフォワー�
 .. list-table:: **エンドポイント**
     :header-rows: 1
     :widths: 20 20 20 40
+    :class: longtable
 
     * - 名前
       - 属性値
@@ -5092,6 +5169,7 @@ RFCに準拠したエンドポイントや、認可サーバ内でフォワー�
 .. list-table:: **フォワード先**
     :header-rows: 1
     :widths: 20 20 20 40
+    :class: longtable
 
     * - 名前
       - 属性値
@@ -5152,6 +5230,7 @@ RFCに準拠したエンドポイントや、認可サーバ内でフォワー�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -5207,6 +5286,7 @@ RFCに準拠したエンドポイントや、認可サーバ内でフォワー�
 .. list-table::
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -5246,6 +5326,7 @@ Appendix
 .. list-table:: **認可エンドポイントで発生する不正クライアントエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -5268,6 +5349,7 @@ Appendix
 .. list-table:: **認可エンドポイントで発生する不正クライアントエラー以外のエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -5309,6 +5391,7 @@ Appendix
 .. list-table:: **トークンエンドポイントで発生するエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -5343,6 +5426,7 @@ Spring Security OAuthを使用せずにクライアントを開発する場合�
 .. list-table:: **【参考】トークンエンドポイントで発生するエラー（OAuth2RestTemplateを使用しない場合）**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -5384,6 +5468,7 @@ Spring Security OAuthを使用せずにクライアントを開発する場合�
 .. list-table:: **リソースサーバで発生するエラー**
     :header-rows: 1
     :widths: 10 20 70
+    :class: longtable
 
     * - 項番
       - 発生するエラー
@@ -5461,6 +5546,7 @@ Spring Security OAuthのAPI自体を改修する必要があり、比較的大�
 .. list-table:: **クライアントの主要なコンポーネント**
     :header-rows: 1
     :widths: 35 65
+    :class: longtable
 
     * - クラス・インタフェース名
       - 説明
@@ -5514,6 +5600,7 @@ Spring Security OAuthのAPI自体を改修する必要があり、比較的大�
 .. list-table:: **クライアントの動き（アクセストークンリクエスト）**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
@@ -5554,6 +5641,7 @@ Spring Security OAuthのAPI自体を改修する必要があり、比較的大�
 .. list-table:: **認可サーバの主要なコンポーネント**
     :header-rows: 1
     :widths: 35 65
+    :class: longtable
 
     * - クラス・インタフェース名
       - 説明
@@ -5600,6 +5688,7 @@ Spring Security OAuthのAPI自体を改修する必要があり、比較的大�
 .. list-table:: **認可サーバの動き（アクセストークンレスポンス）**
     :header-rows: 1
     :widths: 10 90
+    :class: longtable
 
     * - 項番
       - 説明
