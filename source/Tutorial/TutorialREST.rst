@@ -521,7 +521,7 @@ web.xmlの修正
    * - 項番
      - 説明
    * - | (1)
-     - | 初期化パラメータ「\ ``contextConfigLocation``\ 」に、REST用のSpringMVC設定ファイルを指定する。
+     - | 初期化パラメータ「\ ``contextConfigLocation``\ 」に、REST用のSpring MVC設定ファイルを指定する。
        | 本チュートリアルでは、クラスパス上にある「:file:`META-INF/spring/spring-mvc-rest.xml`」を指定している。
    * - | (2)
      - | \ ``<url-pattern>``\ 要素に、REST API用の\ ``DispatcherServlet``\ にマッピングするURLのパターンを指定する。
@@ -533,7 +533,7 @@ spring-mvc-rest.xmlの作成
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | \ :file:`src/main/resources/META-INF/spring/spring-mvc.xml`\ をコピーして、REST用のSpring MVC設定ファイルを作成する。
-| REST用のSpringMVC設定ファイルは以下のような定義となる。
+| REST用のSpring MVC設定ファイルは以下のような定義となる。
 
 .. figure:: ./images_rest/add-spring-mvc-rest.png
 

@@ -70,7 +70,7 @@
       - 記載内容の修正
 
         * SOAP Web Serviceの実装に伴うインジェクションで使用するアノテーションを\ ``@Inject`` \から\ ``@Autowired`` \に変更(管理ID#2763)
-        * Spring FrameworkのJAX-WS連携機能についての誤記修正と、SOAPサーバがJavaEEサーバのJAW-WS実装上で動作することに伴なう注意事項の追記(管理ID#2770)
+        * Spring FrameworkのJAX-WS連携機能についての誤記修正と、SOAPサーバがJava EEサーバのJAW-WS実装上で動作することに伴なう注意事項の追記(管理ID#2770)
 
     * - 
       - :doc:`../ArchitectureInDetail/MessagingDetail/JMS`

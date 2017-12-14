@@ -126,7 +126,7 @@ Spring Dataより提供されているページ検索用の機能は、以下の
  .. warning:: **spring-data-commons 1.6.1.RELEASEにおけるリクエストパラメータに不正な値を指定した際の動作について**
 
     terasoluna-gfw-common 1.0.0.RELEASEが依存するspring-data-commons 1.6.1.RELEASEでは、ページ検索用のリクエストパラメータ(page, size, sort)に不正な値を指定した場合、
-    ``java.lang.IllegalArgumentException`` 又は ``java.lang.ArrayIndexOutOfBoundsException`` が発生し、SpringMVCのデフォルトの設定だとシステムエラー(HTTPステータスコード=500)となってしまうという不具合がある。
+    ``java.lang.IllegalArgumentException`` 又は ``java.lang.ArrayIndexOutOfBoundsException`` が発生し、Spring MVCのデフォルトの設定だとシステムエラー(HTTPステータスコード=500)となってしまうという不具合がある。
 
     この問題はSpring Data CommonsのJIRA「`DATACMNS-379 <https://jira.springsource.org/browse/DATACMNS-379>`_」と「`DATACMNS-408 <https://jira.springsource.org/browse/DATACMNS-408>`_」で対応され、spring-data-commons 1.6.3.RELEASEで解消されている。
     改修後の動作としては、不正な値を指定した場合は、 パラメータ省略時のデフォルト値が適用される。

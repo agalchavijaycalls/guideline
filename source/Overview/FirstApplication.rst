@@ -812,7 +812,7 @@ Spring MVCでは、 `Bean Validation <http://jcp.org/en/jsr/detail?id=349>`_\ �
 この章では、
 
 #. \ ``mvn archetype:generate``\を利用したブランクプロジェクトの作成方法
-#. SpringMVCの基本的な設定方法
+#. Spring MVCの基本的な設定方法
 #. 最も簡易な、画面遷移方法
 #. 画面間での値の引き渡し方法
 #. シンプルな入力チェック方法

@@ -1738,7 +1738,7 @@ Cookieに値を書き込む
 `ハンドラメソッドの返り値についても様々な値をとることができる <http://docs.spring.io/spring/docs/4.3.11.RELEASE/spring-framework-reference/html/mvc.html#mvc-ann-return-types>`_ が、
 基本的には次に挙げるもののみを使用すること。
 
-- String(View論理名)
+- String(View名)
 
 以下に、目的別に返り値の使用方法について説明する。
 
