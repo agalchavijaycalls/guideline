@@ -10,10 +10,10 @@
 
 ## Fix Version/s
 (To be written later by project member)
-- [ ] 5.4.0_ja (master)
-- [ ] 5.3.2_ja (5.3.x)
-- [ ] 5.4.0_en (master)
-- [ ] 5.3.2_en (5.3.x)
+- [ ] 5.5.0_ja (master)
+- [ ] 5.4.1_ja (5.4.x)
+- [ ] 5.5.0_en (master)
+- [ ] 5.4.1_en (5.4.x)
 
 ## Final Solution
 (To be written later by project member)
