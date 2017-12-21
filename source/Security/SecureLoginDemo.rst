@@ -1347,7 +1347,7 @@ ER図
            @Target({ TYPE, ANNOTATION_TYPE })
            @Retention(RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                StrongPassword[] value();
            }
 
@@ -1462,7 +1462,7 @@ ER図
            @Target({ TYPE, ANNOTATION_TYPE })
            @Retention(RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                NotReusedPassword[] value();
            }
 
@@ -4879,7 +4879,7 @@ URLに含まれるトークンと秘密情報の組が正しい場合にのみ�
            @Target({ FIELD })
            @Retention(RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                NotContainControlChars[] value();
            }
 
@@ -4920,7 +4920,7 @@ URLに含まれるトークンと秘密情報の組が正しい場合にのみ�
            @Target({ FIELD })
            @Retention(RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                NotContainControlCharsExceptNewlines[] value();
            }
 
@@ -4969,7 +4969,7 @@ URLに含まれるトークンと秘密情報の組が正しい場合にのみ�
            @Target({ ElementType.FIELD })
            @Retention(RetentionPolicy.RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                FileExtension[] value();
            }
        }
@@ -5074,7 +5074,7 @@ URLに含まれるトークンと秘密情報の組が正しい場合にのみ�
            @Target({ ElementType.FIELD })
            @Retention(RetentionPolicy.RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                FileNamePattern[] value();
            }
 
@@ -5163,7 +5163,7 @@ URLに含まれるトークンと秘密情報の組が正しい場合にのみ�
            @Target({ FIELD })
            @Retention(RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                DomainRestrictedURL[] value();
            }
 
@@ -5271,7 +5271,7 @@ URLに含まれるトークンと秘密情報の組が正しい場合にのみ�
            @Target({ FIELD })
            @Retention(RUNTIME)
            @Documented
-           public @interface List {
+           @interface List {
                DomainRestrictedEmail[] value();
            }
 

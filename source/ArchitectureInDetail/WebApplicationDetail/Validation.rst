@@ -2544,7 +2544,7 @@ Bean Validationは標準で用意されているチェックルール以外に�
       @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
       @Retention(RUNTIME)
       @Documented
-      public @interface List {
+      @interface List {
           Xxx[] value();
       }
   }
@@ -2614,7 +2614,7 @@ Bean Validationは標準で用意されているチェックルール以外に�
         @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             AlphaNumeric[] value();
         }
     }
@@ -2674,7 +2674,7 @@ Bean Validationは標準で用意されているチェックルール以外に�
         @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             NotNegative[] value();
         }
     }
@@ -2720,7 +2720,7 @@ Bean Validationは標準で用意されているチェックルール以外に�
         @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             UserId[] value();
         }
     }
@@ -2765,7 +2765,7 @@ Bean Validationは標準で用意されているチェックルール以外に�
         @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             Age[] value();
         }
     }
@@ -3258,7 +3258,7 @@ Controller側では\ ``Role``\の\ ``List``\ 、JSP側では\ ``String``\ の\ `
         @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             ISBN13[] value();
         }
     }
@@ -3394,7 +3394,7 @@ Controller側では\ ``Role``\の\ ``List``\ 、JSP側では\ ``String``\ の\ `
         @Target({ TYPE, ANNOTATION_TYPE })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             Confirm[] value();
         }
     }
@@ -3682,7 +3682,7 @@ Controller側では\ ``Role``\の\ ``List``\ 、JSP側では\ ``String``\ の\ `
         @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
         @Retention(RUNTIME)
         @Documented
-        public @interface List {
+        @interface List {
             UnusedUserId[] value();
         }
     }
@@ -4802,7 +4802,7 @@ terasoluna-gfw-validatorのチェックルール
         @Documented
         @Target({ TYPE, ANNOTATION_TYPE })
         @Retention(RUNTIME)
-        public @interface List {
+        @interface List {
             Confirm[] value();
         }
     }
